@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sanim\\OneDrive - UGM 365\\KULIAH\\SEMESTER 5\\JUNIOR PROJECT\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj",
+      "projectUniqueName": "D:\\COLLEGE-BICYCLE\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj",
       "projectName": "CollegeBicycle",
-      "projectPath": "C:\\Users\\sanim\\OneDrive - UGM 365\\KULIAH\\SEMESTER 5\\JUNIOR PROJECT\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj",
+      "projectPath": "D:\\COLLEGE-BICYCLE\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj",
       "packagesPath": "C:\\Users\\sanim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sanim\\OneDrive - UGM 365\\KULIAH\\SEMESTER 5\\JUNIOR PROJECT\\college-bicycle\\CollegeBicycle\\obj\\",
+      "outputPath": "D:\\COLLEGE-BICYCLE\\college-bicycle\\CollegeBicycle\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
