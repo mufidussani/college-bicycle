@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "MD6LOgkge+tNT50zJtzhy94Xnzqhqzw52Xn3933bSx5EPwI5uixoi2Af7jARKVu5gkDYBgJEmLoB3HPWIaxycw==",
+  "dgSpecHash": "rs9ZjVx4YZKd8zUp/iWbTqB2Q70vPfn7nMgbyVLvv5nOIBgIFaNQK9F5mqWlMAiWXG4nNMdiJyVwrVCzWwKb7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Source\\Repos\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj",
+  "projectFilePath": "C:\\Users\\User\\source\\repos\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\User\\source\\repos\\college-bicycle\\CollegeBicycle\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

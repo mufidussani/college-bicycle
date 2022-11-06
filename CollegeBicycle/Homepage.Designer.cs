@@ -72,7 +72,7 @@
             this.panelTop.Controls.Add(this.pbProfile);
             this.panelTop.Controls.Add(this.lblTitleApp);
             this.panelTop.Location = new System.Drawing.Point(70, -1);
-            this.panelTop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelTop.Margin = new System.Windows.Forms.Padding(4);
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(930, 76);
             this.panelTop.TabIndex = 0;
@@ -92,7 +92,7 @@
             // 
             this.pbProfile.Image = global::CollegeBicycle.Properties.Resources.frame_profile;
             this.pbProfile.Location = new System.Drawing.Point(696, 12);
-            this.pbProfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbProfile.Margin = new System.Windows.Forms.Padding(4);
             this.pbProfile.Name = "pbProfile";
             this.pbProfile.Size = new System.Drawing.Size(56, 56);
             this.pbProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -119,7 +119,7 @@
             this.panelSide.Controls.Add(this.pictureBox1);
             this.panelSide.Controls.Add(this.button1);
             this.panelSide.Location = new System.Drawing.Point(0, -1);
-            this.panelSide.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelSide.Margin = new System.Windows.Forms.Padding(4);
             this.panelSide.Name = "panelSide";
             this.panelSide.Size = new System.Drawing.Size(70, 564);
             this.panelSide.TabIndex = 1;
@@ -132,7 +132,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
             this.button4.Location = new System.Drawing.Point(4, 288);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(62, 62);
             this.button4.TabIndex = 9;
@@ -146,7 +146,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.Location = new System.Drawing.Point(4, 219);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(62, 62);
             this.button3.TabIndex = 8;
@@ -160,7 +160,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.Location = new System.Drawing.Point(4, 156);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(62, 56);
             this.button2.TabIndex = 7;
@@ -170,7 +170,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(4, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(62, 86);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -185,7 +185,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::CollegeBicycle.Properties.Resources.logo_home2;
             this.button1.Location = new System.Drawing.Point(4, 85);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(62, 65);
             this.button1.TabIndex = 6;
@@ -197,7 +197,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(128, 105);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(222, 76);
             this.panel1.TabIndex = 2;
@@ -230,7 +230,7 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(415, 105);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(222, 76);
             this.panel2.TabIndex = 3;
@@ -262,7 +262,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.panel3.Controls.Add(this.label5);
             this.panel3.Location = new System.Drawing.Point(710, 136);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(222, 45);
             this.panel3.TabIndex = 4;
@@ -283,7 +283,7 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(149)))), ((int)(((byte)(178)))));
             this.panel4.Controls.Add(this.label6);
             this.panel4.Location = new System.Drawing.Point(710, 200);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(222, 45);
             this.panel4.TabIndex = 5;
@@ -305,7 +305,7 @@
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.label7);
             this.panel5.Location = new System.Drawing.Point(710, 241);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(222, 291);
             this.panel5.TabIndex = 5;
@@ -336,7 +336,7 @@
             // 
             this.pictureBox6.Image = global::CollegeBicycle.Properties.Resources.map_temporary;
             this.pictureBox6.Location = new System.Drawing.Point(128, 218);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(510, 315);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -347,6 +347,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(230)))));
             this.ClientSize = new System.Drawing.Size(1000, 562);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.panel5);
@@ -356,7 +357,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelSide);
             this.Controls.Add(this.panelTop);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Homepage";
             this.Text = "Homepage";
             this.Load += new System.EventHandler(this.Homepage_Load);
