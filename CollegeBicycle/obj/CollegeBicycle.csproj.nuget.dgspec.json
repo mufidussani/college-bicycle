@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\COLLEGE-BICYCLE\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj": {}
+    "D:\\PROGRAMMING\\COLLEGE-BICYCLE\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj": {}
   },
   "projects": {
-    "D:\\COLLEGE-BICYCLE\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj": {
+    "D:\\PROGRAMMING\\COLLEGE-BICYCLE\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\COLLEGE-BICYCLE\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj",
+        "projectUniqueName": "D:\\PROGRAMMING\\COLLEGE-BICYCLE\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj",
         "projectName": "CollegeBicycle",
-        "projectPath": "D:\\COLLEGE-BICYCLE\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj",
+        "projectPath": "D:\\PROGRAMMING\\COLLEGE-BICYCLE\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj",
         "packagesPath": "C:\\Users\\sanim\\.nuget\\packages\\",
-        "outputPath": "D:\\COLLEGE-BICYCLE\\college-bicycle\\CollegeBicycle\\obj\\",
+        "outputPath": "D:\\PROGRAMMING\\COLLEGE-BICYCLE\\college-bicycle\\CollegeBicycle\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
