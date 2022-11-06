@@ -1,15 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "rs9ZjVx4YZKd8zUp/iWbTqB2Q70vPfn7nMgbyVLvv5nOIBgIFaNQK9F5mqWlMAiWXG4nNMdiJyVwrVCzWwKb7A==",
+  "dgSpecHash": "bfh9863nUPHu8/XzM8HxX4FmeXNhN0ljIiFtcIuWi3zvUs9PSFg/eJ71BMpjcpdwrHNUGDO40RAQVFWehXTHIw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\source\\repos\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj",
-  "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\User\\source\\repos\\college-bicycle\\CollegeBicycle\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "projectFilePath": "D:\\PROGRAMMING\\COLLEGE-BICYCLE\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sanim\\.nuget\\packages\\npgsql\\6.0.7\\npgsql.6.0.7.nupkg.sha512",
+    "C:\\Users\\sanim\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
 }

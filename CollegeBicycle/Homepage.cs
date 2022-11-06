@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.DirectoryServices.ActiveDirectory;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,8 @@ namespace CollegeBicycle
 {
     public partial class Homepage : Form
     {
+        
+       
         public Homepage()
         {
             InitializeComponent();
@@ -34,9 +37,17 @@ namespace CollegeBicycle
         }
         private void closeButton_Click(object sender, System.EventArgs e)
         {
-            var login = new Login();
-            login.Close();
-            login.Dispose();
+
+        }
+
+        private void Homepage_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
+        }
+
+        private void btnBicycle_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
