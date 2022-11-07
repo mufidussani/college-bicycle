@@ -50,5 +50,25 @@ namespace CollegeBicycle
         {
             OpenChildForm(new Homepage(), sender);
         }
+
+        private void pictureProfile_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new ProfilPengelola(), sender);
+        }
+
+        private void labelProfile_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new ProfilPengelola(), sender);
+        }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Users(), sender);
+        }
+
+        private void btnEmployee_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Employee(), sender);
+        }
     }
 }

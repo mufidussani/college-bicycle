@@ -31,7 +31,7 @@ D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-w
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.Employee.resources
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.Homepage.resources
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.Login.resources
-D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.ProfilPengguna.resources
+D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.ProfilPengelola.resources
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.Properties.Resources.resources
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.Users.resources
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.csproj.GenerateResource.cache

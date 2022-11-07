@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CollegeBicycle
 {
-    public partial class ProfilPengguna : Form
+    public partial class ProfilPengelola : Form
     {
-        public ProfilPengguna()
+        public ProfilPengelola()
         {
             InitializeComponent();
         }

@@ -35,14 +35,14 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnHomepage = new System.Windows.Forms.Button();
             this.panelSide = new System.Windows.Forms.Panel();
-            this.pbProfile = new System.Windows.Forms.PictureBox();
+            this.pictureProfile = new System.Windows.Forms.PictureBox();
             this.lblTitleApp = new System.Windows.Forms.Label();
             this.panelTop = new System.Windows.Forms.Panel();
-            this.lblProfile = new System.Windows.Forms.Label();
+            this.labelProfile = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelSide.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureProfile)).BeginInit();
             this.panelTop.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,6 +59,7 @@
             this.btnEmployee.Size = new System.Drawing.Size(62, 62);
             this.btnEmployee.TabIndex = 9;
             this.btnEmployee.UseVisualStyleBackColor = false;
+            this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
             // 
             // btnUsers
             // 
@@ -73,6 +74,7 @@
             this.btnUsers.Size = new System.Drawing.Size(62, 62);
             this.btnUsers.TabIndex = 8;
             this.btnUsers.UseVisualStyleBackColor = false;
+            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
             // btnBicycle
             // 
@@ -129,16 +131,18 @@
             this.panelSide.Size = new System.Drawing.Size(70, 564);
             this.panelSide.TabIndex = 3;
             // 
-            // pbProfile
+            // pictureProfile
             // 
-            this.pbProfile.Image = global::CollegeBicycle.Properties.Resources.frame_profile;
-            this.pbProfile.Location = new System.Drawing.Point(696, 12);
-            this.pbProfile.Margin = new System.Windows.Forms.Padding(4);
-            this.pbProfile.Name = "pbProfile";
-            this.pbProfile.Size = new System.Drawing.Size(56, 56);
-            this.pbProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbProfile.TabIndex = 2;
-            this.pbProfile.TabStop = false;
+            this.pictureProfile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureProfile.Image = global::CollegeBicycle.Properties.Resources.frame_profile;
+            this.pictureProfile.Location = new System.Drawing.Point(696, 12);
+            this.pictureProfile.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureProfile.Name = "pictureProfile";
+            this.pictureProfile.Size = new System.Drawing.Size(56, 56);
+            this.pictureProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureProfile.TabIndex = 2;
+            this.pictureProfile.TabStop = false;
+            this.pictureProfile.Click += new System.EventHandler(this.pictureProfile_Click);
             // 
             // lblTitleApp
             // 
@@ -154,8 +158,8 @@
             // panelTop
             // 
             this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.panelTop.Controls.Add(this.lblProfile);
-            this.panelTop.Controls.Add(this.pbProfile);
+            this.panelTop.Controls.Add(this.labelProfile);
+            this.panelTop.Controls.Add(this.pictureProfile);
             this.panelTop.Controls.Add(this.lblTitleApp);
             this.panelTop.Location = new System.Drawing.Point(70, -1);
             this.panelTop.Margin = new System.Windows.Forms.Padding(4);
@@ -163,16 +167,18 @@
             this.panelTop.Size = new System.Drawing.Size(930, 76);
             this.panelTop.TabIndex = 2;
             // 
-            // lblProfile
+            // labelProfile
             // 
-            this.lblProfile.AutoSize = true;
-            this.lblProfile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblProfile.Location = new System.Drawing.Point(764, 26);
-            this.lblProfile.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblProfile.Name = "lblProfile";
-            this.lblProfile.Size = new System.Drawing.Size(127, 28);
-            this.lblProfile.TabIndex = 3;
-            this.lblProfile.Text = "Dinda Sabela";
+            this.labelProfile.AutoSize = true;
+            this.labelProfile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labelProfile.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.labelProfile.Location = new System.Drawing.Point(764, 26);
+            this.labelProfile.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelProfile.Name = "labelProfile";
+            this.labelProfile.Size = new System.Drawing.Size(127, 28);
+            this.labelProfile.TabIndex = 3;
+            this.labelProfile.Text = "Dinda Sabela";
+            this.labelProfile.Click += new System.EventHandler(this.labelProfile_Click);
             // 
             // panelDesktop
             // 
@@ -197,7 +203,7 @@
             this.Load += new System.EventHandler(this.CollegeBicycle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelSide.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbProfile)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureProfile)).EndInit();
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
             this.ResumeLayout(false);
@@ -212,10 +218,10 @@
         private PictureBox pictureBox1;
         private Button btnHomepage;
         private Panel panelSide;
-        private PictureBox pbProfile;
+        private PictureBox pictureProfile;
         private Label lblTitleApp;
         private Panel panelTop;
-        private Label lblProfile;
+        private Label labelProfile;
         private Panel panelDesktop;
     }
 }
