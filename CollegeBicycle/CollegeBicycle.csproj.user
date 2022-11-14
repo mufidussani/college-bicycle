@@ -8,6 +8,9 @@
     <Compile Update="AddPenggunaSepeda.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="AddSepeda.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Bicycle.cs">
       <SubType>Form</SubType>
     </Compile>

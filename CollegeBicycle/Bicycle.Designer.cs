@@ -28,35 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.comboBoxStation = new System.Windows.Forms.ComboBox();
+            this.dgvSepeda = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btnPinjam = new System.Windows.Forms.Button();
+            this.btnTambahSepeda = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSepeda)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // comboBoxStation
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(29, 15);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(196, 36);
-            this.comboBox1.TabIndex = 4;
-            this.comboBox1.Text = "Pilih Station";
+            this.comboBoxStation.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBoxStation.FormattingEnabled = true;
+            this.comboBoxStation.Location = new System.Drawing.Point(29, 15);
+            this.comboBoxStation.Name = "comboBoxStation";
+            this.comboBoxStation.Size = new System.Drawing.Size(298, 36);
+            this.comboBoxStation.TabIndex = 4;
+            this.comboBoxStation.Text = "Pilih Station";
             // 
-            // dataGridView1
+            // dgvSepeda
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(29, 63);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(424, 358);
-            this.dataGridView1.TabIndex = 5;
+            this.dgvSepeda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSepeda.Location = new System.Drawing.Point(29, 63);
+            this.dgvSepeda.Name = "dgvSepeda";
+            this.dgvSepeda.RowHeadersWidth = 51;
+            this.dgvSepeda.RowTemplate.Height = 29;
+            this.dgvSepeda.Size = new System.Drawing.Size(424, 358);
+            this.dgvSepeda.TabIndex = 5;
             // 
             // panel1
             // 
@@ -88,15 +89,26 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Tersedia : Tidak";
             // 
-            // button5
+            // btnPinjam
             // 
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button5.Location = new System.Drawing.Point(523, 386);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(137, 35);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Pinjam";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnPinjam.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPinjam.Location = new System.Drawing.Point(523, 386);
+            this.btnPinjam.Name = "btnPinjam";
+            this.btnPinjam.Size = new System.Drawing.Size(137, 35);
+            this.btnPinjam.TabIndex = 7;
+            this.btnPinjam.Text = "Pinjam";
+            this.btnPinjam.UseVisualStyleBackColor = true;
+            // 
+            // btnTambahSepeda
+            // 
+            this.btnTambahSepeda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnTambahSepeda.Location = new System.Drawing.Point(678, 386);
+            this.btnTambahSepeda.Name = "btnTambahSepeda";
+            this.btnTambahSepeda.Size = new System.Drawing.Size(159, 35);
+            this.btnTambahSepeda.TabIndex = 8;
+            this.btnTambahSepeda.Text = "Tambah Sepeda";
+            this.btnTambahSepeda.UseVisualStyleBackColor = true;
+            this.btnTambahSepeda.Click += new System.EventHandler(this.btnTambahSepeda_Click);
             // 
             // Bicycle
             // 
@@ -104,13 +116,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(230)))));
             this.ClientSize = new System.Drawing.Size(912, 442);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnTambahSepeda);
+            this.Controls.Add(this.btnPinjam);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dgvSepeda);
+            this.Controls.Add(this.comboBoxStation);
             this.Name = "Bicycle";
             this.Text = "Bicycle";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Bicycle_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSepeda)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -118,11 +132,12 @@
         }
 
         #endregion
-        private ComboBox comboBox1;
-        private DataGridView dataGridView1;
+        private ComboBox comboBoxStation;
+        private DataGridView dgvSepeda;
         private Panel panel1;
         private Label label2;
         private Label label1;
-        private Button button5;
+        private Button btnPinjam;
+        private Button btnTambahSepeda;
     }
 }

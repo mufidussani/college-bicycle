@@ -45,3 +45,4 @@ D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-w
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.pdb
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.genruntimeconfig.cache
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\ref\CollegeBicycle.dll
+D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.AddSepeda.resources
