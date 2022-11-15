@@ -1,4 +1,6 @@
-﻿using Npgsql;
+﻿using CollegeBicycle.Entity;
+using CollegeBicycle.Repository;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +16,7 @@ namespace CollegeBicycle
 {
     public partial class Bicycle : Form
     {
+        readonly private SepedaRepository listSepeda = new SepedaRepository();
         private NpgsqlConnection conn;
         string connstring = "Host=localhost;Port=5432;Username=mufidussani;Password=mufidussani;Database=collegebicycle";
         public DataTable dt;
@@ -49,14 +52,17 @@ namespace CollegeBicycle
             comboBoxStation.DataSource = ds.Tables["Station"];
 
             //dgvsepeda
-            dgvSepeda.DataSource = null;
-            sql = "select * from select_sepeda()";
-            cmd = new NpgsqlCommand(sql, conn);
-            dt = new DataTable();
-            NpgsqlDataReader rd = cmd.ExecuteReader();
-            dt.Load(rd);
-            dgvSepeda.DataSource = dt;
-            conn.Close();
+            //dgvSepeda.DataSource = null;
+            //sql = "select * from select_sepeda()";
+            //cmd = new NpgsqlCommand(sql, conn);
+            //dt = new DataTable();
+            //NpgsqlDataReader rd = cmd.ExecuteReader();
+            //dt.Load(rd);
+            //dgvSepeda.DataSource = dt;
+            //conn.Close();
+
+            List<Sepeda> ListSepeda = listSepeda.GetAll();
+            dgvSepeda.DataSource = ListSepeda;
             
         }
     }
