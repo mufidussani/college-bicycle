@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.comboBoxStation = new System.Windows.Forms.ComboBox();
+            this.dgvPeminjam = new System.Windows.Forms.DataGridView();
             this.button5 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPeminjam)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -45,24 +45,25 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Informasi Peminjaman Sepeda";
             // 
-            // comboBox1
+            // comboBoxStation
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(328, 58);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(218, 28);
-            this.comboBox1.TabIndex = 5;
-            this.comboBox1.Text = "Pilih Station...";
+            this.comboBoxStation.FormattingEnabled = true;
+            this.comboBoxStation.Location = new System.Drawing.Point(328, 58);
+            this.comboBoxStation.Name = "comboBoxStation";
+            this.comboBoxStation.Size = new System.Drawing.Size(218, 28);
+            this.comboBoxStation.TabIndex = 5;
+            this.comboBoxStation.Text = "Pilih Station...";
             // 
-            // dataGridView1
+            // dgvPeminjam
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(46, 105);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(819, 279);
-            this.dataGridView1.TabIndex = 6;
+            this.dgvPeminjam.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvPeminjam.ColumnHeadersHeight = 29;
+            this.dgvPeminjam.Location = new System.Drawing.Point(46, 105);
+            this.dgvPeminjam.Name = "dgvPeminjam";
+            this.dgvPeminjam.RowHeadersWidth = 51;
+            this.dgvPeminjam.RowTemplate.Height = 29;
+            this.dgvPeminjam.Size = new System.Drawing.Size(819, 279);
+            this.dgvPeminjam.TabIndex = 6;
             // 
             // button5
             // 
@@ -80,12 +81,13 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(230)))));
             this.ClientSize = new System.Drawing.Size(912, 442);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dgvPeminjam);
+            this.Controls.Add(this.comboBoxStation);
             this.Controls.Add(this.label1);
             this.Name = "Users";
             this.Text = "Users";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Users_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPeminjam)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,8 +95,8 @@
 
         #endregion
         private Label label1;
-        private ComboBox comboBox1;
-        private DataGridView dataGridView1;
+        private ComboBox comboBoxStation;
+        private DataGridView dgvPeminjam;
         private Button button5;
     }
 }

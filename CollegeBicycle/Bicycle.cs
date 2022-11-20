@@ -16,12 +16,15 @@ namespace CollegeBicycle
 {
     public partial class Bicycle : Form
     {
+        AddPenggunaSepeda addpenggunasepeda = new AddPenggunaSepeda();
         readonly private SepedaRepository listSepeda = new SepedaRepository();
+        readonly private StationRepository listStation = new StationRepository();
         private NpgsqlConnection conn;
         string connstring = "Host=localhost;Port=5432;Username=mufidussani;Password=mufidussani;Database=collegebicycle";
         public DataTable dt;
         public static NpgsqlCommand cmd;
         private string sql = null;
+        private DataGridViewRow r;
         public Bicycle()
         {
             InitializeComponent();
@@ -43,13 +46,16 @@ namespace CollegeBicycle
             conn = new NpgsqlConnection(connstring);
             conn.Open();
             //combo box station
-            sql = "select * from station";
-            NpgsqlDataAdapter da = new NpgsqlDataAdapter(sql, conn);
-            DataSet ds = new DataSet();
-            da.Fill(ds, "Station");
+            //sql = "select * from station";
+            //NpgsqlDataAdapter da = new NpgsqlDataAdapter(sql, conn);
+            //DataSet ds = new DataSet();
+            //da.Fill(ds, "Station");
+            //comboBoxStation.DisplayMember = "nama_station";
+            //comboBoxStation.ValueMember = "id_station";
+            //comboBoxStation.DataSource = ds.Tables["Station"];
+            List<Station> ListStation = listStation.GetAll();
+            comboBoxStation.DataSource = ListStation;
             comboBoxStation.DisplayMember = "nama_station";
-            comboBoxStation.ValueMember = "id_station";
-            comboBoxStation.DataSource = ds.Tables["Station"];
 
             //dgvsepeda
             //dgvSepeda.DataSource = null;
@@ -63,6 +69,22 @@ namespace CollegeBicycle
 
             List<Sepeda> ListSepeda = listSepeda.GetAll();
             dgvSepeda.DataSource = ListSepeda;
+            
+        }
+
+        private void btnPinjam_Click(object sender, EventArgs e)
+        {
+            addpenggunasepeda.ShowDialog();
+        }
+
+        private void dgvSepeda_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                r = dgvSepeda.Rows[e.RowIndex];
+                addpenggunasepeda.tbStation.Text = r.Cells["nama_station"].Value.ToString();
+                addpenggunasepeda.tbKodeSepeda.Text = r.Cells["kode_sepeda"].Value.ToString();
+            }    
             
         }
     }

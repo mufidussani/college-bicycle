@@ -9,13 +9,11 @@ using System.Threading.Tasks;
 
 namespace CollegeBicycle.Repository
 {
-    public interface ISepedaRepository
+    public interface IStationRepository
     {
-        List<Sepeda> GetAll();
+        List<Station> GetAll();
     }
-
-    // class
-    public class SepedaRepository : ISepedaRepository
+    public class StationRepository : IStationRepository
     {
         private NpgsqlConnection conn;
         string connstring = "Host=localhost;Port=5432;Username=mufidussani;Password=mufidussani;Database=collegebicycle";
@@ -23,31 +21,28 @@ namespace CollegeBicycle.Repository
         public static NpgsqlCommand cmd;
         private string sql = null;
 
-        public List<Sepeda> GetAll()
+        public List<Station> GetAll()
         {
-            List<Sepeda> listSepeda = new List<Sepeda>();
+            List<Station> listStation = new List<Station>();
             conn = new NpgsqlConnection(connstring);
             conn.Open();
-            sql = "select * from sepeda";
+            sql = "select * from station";
             cmd = new NpgsqlCommand(sql, conn);
             dt = new DataTable();
             NpgsqlDataReader rd = cmd.ExecuteReader();
             Console.WriteLine(rd.ToString());
             while (rd.Read())
             {
-                Sepeda newSepeda = new Sepeda
+                Station newStation = new Station
                 {
-                    kode_sepeda = rd["kode_sepeda"].ToString(),
+                    id_station = (int)rd["id_station"],
                     nama_station = rd["nama_station"].ToString(),
-                    lokasi_sepeda = rd["lokasi_sepeda"].ToString(),
-                    ketersediaan_sepeda = rd["ketersediaan_sepeda"].ToString()
                 };
-                listSepeda.Add(newSepeda);
+                listStation.Add(newStation);
             }
             rd.Close();
             conn.Close();
-            return listSepeda;
+            return listStation;
         }
-
     }
 }

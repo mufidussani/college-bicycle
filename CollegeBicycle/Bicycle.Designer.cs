@@ -58,6 +58,7 @@
             this.dgvSepeda.RowTemplate.Height = 29;
             this.dgvSepeda.Size = new System.Drawing.Size(424, 358);
             this.dgvSepeda.TabIndex = 5;
+            this.dgvSepeda.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSepeda_CellClick);
             // 
             // panel1
             // 
@@ -98,6 +99,7 @@
             this.btnPinjam.TabIndex = 7;
             this.btnPinjam.Text = "Pinjam";
             this.btnPinjam.UseVisualStyleBackColor = true;
+            this.btnPinjam.Click += new System.EventHandler(this.btnPinjam_Click);
             // 
             // btnTambahSepeda
             // 
@@ -133,11 +135,11 @@
 
         #endregion
         private ComboBox comboBoxStation;
-        private DataGridView dgvSepeda;
         private Panel panel1;
         private Label label2;
         private Label label1;
         private Button btnPinjam;
         private Button btnTambahSepeda;
+        public DataGridView dgvSepeda;
     }
 }

@@ -8,8 +8,8 @@ namespace CollegeBicycle.Entity
 {
     public class Station
     {
-        protected int id_station { get; set; }
-        protected string nama_station { get; set; }
+        public int id_station { get; set; }
+        public string nama_station { get; set; }
 
         public Station()
         {
