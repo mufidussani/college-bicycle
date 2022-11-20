@@ -121,6 +121,8 @@
             // 
             // dtpTanggalPinjam
             // 
+            this.dtpTanggalPinjam.CustomFormat = "dd MMMM yyyy";
+            this.dtpTanggalPinjam.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpTanggalPinjam.Location = new System.Drawing.Point(354, 276);
             this.dtpTanggalPinjam.Name = "dtpTanggalPinjam";
             this.dtpTanggalPinjam.Size = new System.Drawing.Size(290, 27);
@@ -182,7 +184,9 @@
             // 
             // dtpTanggalKembali
             // 
+            this.dtpTanggalKembali.CustomFormat = "dd MMMM yyyy";
             this.dtpTanggalKembali.Enabled = false;
+            this.dtpTanggalKembali.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpTanggalKembali.Location = new System.Drawing.Point(354, 320);
             this.dtpTanggalKembali.Name = "dtpTanggalKembali";
             this.dtpTanggalKembali.Size = new System.Drawing.Size(290, 27);
@@ -222,19 +226,19 @@
         #endregion
         private Button button6;
         private Button btnSimpan;
-        private TextBox tbNim;
-        private TextBox tbNama;
         private Label label4;
         private Label label3;
         private Label label5;
         private Label label6;
-        private DateTimePicker dtpTanggalPinjam;
         private Label label2;
         private Label label1;
         public TextBox tbStation;
         public TextBox tbKodeSepeda;
-        private TextBox tbNoHp;
         private Label label7;
-        private DateTimePicker dtpTanggalKembali;
+        public TextBox tbNama;
+        public TextBox tbNim;
+        public DateTimePicker dtpTanggalPinjam;
+        public TextBox tbNoHp;
+        public DateTimePicker dtpTanggalKembali;
     }
 }

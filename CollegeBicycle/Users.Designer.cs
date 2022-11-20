@@ -31,7 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxStation = new System.Windows.Forms.ComboBox();
             this.dgvPeminjam = new System.Windows.Forms.DataGridView();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnUpdateForm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeminjam)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,15 +64,17 @@
             this.dgvPeminjam.RowTemplate.Height = 29;
             this.dgvPeminjam.Size = new System.Drawing.Size(819, 279);
             this.dgvPeminjam.TabIndex = 6;
+            this.dgvPeminjam.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPeminjam_CellClick);
             // 
-            // button5
+            // btnUpdateForm
             // 
-            this.button5.Location = new System.Drawing.Point(716, 401);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(149, 29);
-            this.button5.TabIndex = 7;
-            this.button5.Text = "Perbarui Form";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnUpdateForm.Location = new System.Drawing.Point(716, 401);
+            this.btnUpdateForm.Name = "btnUpdateForm";
+            this.btnUpdateForm.Size = new System.Drawing.Size(149, 29);
+            this.btnUpdateForm.TabIndex = 7;
+            this.btnUpdateForm.Text = "Perbarui Form";
+            this.btnUpdateForm.UseVisualStyleBackColor = true;
+            this.btnUpdateForm.Click += new System.EventHandler(this.btnUpdateForm_Click);
             // 
             // Users
             // 
@@ -80,7 +82,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(230)))));
             this.ClientSize = new System.Drawing.Size(912, 442);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnUpdateForm);
             this.Controls.Add(this.dgvPeminjam);
             this.Controls.Add(this.comboBoxStation);
             this.Controls.Add(this.label1);
@@ -97,6 +99,6 @@
         private Label label1;
         private ComboBox comboBoxStation;
         private DataGridView dgvPeminjam;
-        private Button button5;
+        private Button btnUpdateForm;
     }
 }

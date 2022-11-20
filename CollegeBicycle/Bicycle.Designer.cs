@@ -51,6 +51,7 @@
             // 
             // dgvSepeda
             // 
+            this.dgvSepeda.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvSepeda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSepeda.Location = new System.Drawing.Point(29, 63);
             this.dgvSepeda.Name = "dgvSepeda";

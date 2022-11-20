@@ -15,10 +15,11 @@ namespace CollegeBicycle
 {
     public partial class Users : Form
     {
+        AddPenggunaSepeda addpenggunasepeda = new AddPenggunaSepeda();
         readonly private StationRepository listStation = new StationRepository();
         readonly private PeminjamRepository listPeminjam = new PeminjamRepository();
         private NpgsqlConnection conn;
-        string connstring = "Host=localhost;Port=5432;Username=mufidussani;Password=mufidussani;Database=collegebicycle";
+        string connstring = "Host=database-1.c3sblevz37wv.ap-northeast-1.rds.amazonaws.com;Port=5432;Username=postgres;Password=collegebicycle;Database=collegebicycle";
         public DataTable dt;
         public static NpgsqlCommand cmd;
         private string sql = null;
@@ -48,6 +49,26 @@ namespace CollegeBicycle
 
             List<Peminjam> ListPeminjam = listPeminjam.GetAll();
             dgvPeminjam.DataSource = ListPeminjam;
+        }
+
+        private void dgvPeminjam_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                r = dgvPeminjam.Rows[e.RowIndex];
+                addpenggunasepeda.tbStation.Text = r.Cells["nama_station"].Value.ToString();
+                addpenggunasepeda.tbKodeSepeda.Text = r.Cells["kode_sepeda"].Value.ToString();
+                addpenggunasepeda.tbNama.Text = r.Cells["nama_peminjam"].Value.ToString();
+                addpenggunasepeda.tbNim.Text = r.Cells["nim_peminjam"].Value.ToString();
+                addpenggunasepeda.tbNoHp.Text = r.Cells["no_hp"].Value.ToString();
+                addpenggunasepeda.dtpTanggalPinjam.Text = r.Cells["tanggal_pinjam"].Value.ToString();
+                addpenggunasepeda.dtpTanggalKembali.Text = r.Cells["tanggal_kembali"].Value.ToString();
+            }
+        }
+
+        private void btnUpdateForm_Click(object sender, EventArgs e)
+        {
+            addpenggunasepeda.ShowDialog();
         }
     }
 }

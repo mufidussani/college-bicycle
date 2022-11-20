@@ -70,5 +70,10 @@ namespace CollegeBicycle
         {
             OpenChildForm(new Employee(), sender);
         }
+
+        private void panelTop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

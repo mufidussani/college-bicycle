@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CollegeBicycle
 {
@@ -18,7 +19,7 @@ namespace CollegeBicycle
             InitializeComponent();
         }
         private NpgsqlConnection conn;
-        string connstring = "Host=localhost;Port=5432;Username=mufidussani;Password=mufidussani;Database=collegebicycle";
+        string connstring = "Host=database-1.c3sblevz37wv.ap-northeast-1.rds.amazonaws.com;Port=5432;Username=postgres;Password=collegebicycle;Database=collegebicycle";
         public DataTable dt;
         public static NpgsqlCommand cmd;
         private string sql = null;
@@ -41,7 +42,8 @@ namespace CollegeBicycle
                 {
                     MessageBox.Show("Login Berhasil! Selamat datang " + tbUsername.Text);
                     this.Hide();
-                    new CollegeBicycle().Show();
+                    CollegeBicycle collegebicycle = new CollegeBicycle();
+                    collegebicycle.ShowDialog();
                 }
                 else
                 {
@@ -60,6 +62,11 @@ namespace CollegeBicycle
         private void Login_Load(object sender, EventArgs e)
         {
             conn = new NpgsqlConnection(connstring);
+        }
+
+        private void tbUsername_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
