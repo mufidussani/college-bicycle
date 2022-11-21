@@ -4799,25 +4799,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sanim\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\asus\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PROGRAMMING\\COLLEGE-BICYCLE\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj",
+      "projectUniqueName": "C:\\Users\\asus\\Source\\Repos\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj",
       "projectName": "CollegeBicycle",
-      "projectPath": "D:\\PROGRAMMING\\COLLEGE-BICYCLE\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj",
-      "packagesPath": "C:\\Users\\sanim\\.nuget\\packages\\",
-      "outputPath": "D:\\PROGRAMMING\\COLLEGE-BICYCLE\\college-bicycle\\CollegeBicycle\\obj\\",
+      "projectPath": "C:\\Users\\asus\\Source\\Repos\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj",
+      "packagesPath": "C:\\Users\\asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\asus\\Source\\Repos\\college-bicycle\\CollegeBicycle\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\sanim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows"
@@ -4878,7 +4881,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

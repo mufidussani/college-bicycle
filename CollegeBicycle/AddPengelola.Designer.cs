@@ -28,47 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.btnSimpan = new System.Windows.Forms.Button();
+            this.tbNip = new System.Windows.Forms.TextBox();
+            this.tbNama = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.cbStation = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // button6
+            // btnSimpan
             // 
-            this.button6.Location = new System.Drawing.Point(602, 366);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(173, 29);
-            this.button6.TabIndex = 25;
-            this.button6.Text = "Hapus";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnSimpan.Location = new System.Drawing.Point(483, 343);
+            this.btnSimpan.Name = "btnSimpan";
+            this.btnSimpan.Size = new System.Drawing.Size(173, 29);
+            this.btnSimpan.TabIndex = 24;
+            this.btnSimpan.Text = "Simpan";
+            this.btnSimpan.UseVisualStyleBackColor = true;
+            this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click_1);
             // 
-            // button5
+            // tbNip
             // 
-            this.button5.Location = new System.Drawing.Point(405, 366);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(173, 29);
-            this.button5.TabIndex = 24;
-            this.button5.Text = "Simpan";
-            this.button5.UseVisualStyleBackColor = true;
+            this.tbNip.Location = new System.Drawing.Point(366, 146);
+            this.tbNip.Name = "tbNip";
+            this.tbNip.Size = new System.Drawing.Size(290, 27);
+            this.tbNip.TabIndex = 23;
             // 
-            // textBox4
+            // tbNama
             // 
-            this.textBox4.Location = new System.Drawing.Point(366, 146);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(290, 27);
-            this.textBox4.TabIndex = 23;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(366, 89);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(290, 27);
-            this.textBox3.TabIndex = 22;
+            this.tbNama.Location = new System.Drawing.Point(366, 89);
+            this.tbNama.Name = "tbNama";
+            this.tbNama.Size = new System.Drawing.Size(290, 27);
+            this.tbNama.TabIndex = 22;
             // 
             // label4
             // 
@@ -90,13 +81,6 @@
             this.label3.TabIndex = 20;
             this.label3.Text = "Nama Pengelola :";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(366, 202);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(290, 27);
-            this.textBox1.TabIndex = 27;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -107,35 +91,43 @@
             this.label1.TabIndex = 26;
             this.label1.Text = "Station :";
             // 
+            // cbStation
+            // 
+            this.cbStation.FormattingEnabled = true;
+            this.cbStation.Location = new System.Drawing.Point(366, 202);
+            this.cbStation.Name = "cbStation";
+            this.cbStation.Size = new System.Drawing.Size(290, 28);
+            this.cbStation.TabIndex = 27;
+            this.cbStation.SelectedIndexChanged += new System.EventHandler(this.cbStation_SelectedIndexChanged);
+            // 
             // AddPengelola
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(230)))));
             this.ClientSize = new System.Drawing.Size(912, 442);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cbStation);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.btnSimpan);
+            this.Controls.Add(this.tbNip);
+            this.Controls.Add(this.tbNama);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Name = "AddPengelola";
-            this.Text = "0";
+            this.Text = "AddPengelola";
+            this.Load += new System.EventHandler(this.AddPengelola_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private Button button6;
-        private Button button5;
-        private TextBox textBox4;
-        private TextBox textBox3;
+        private Button btnSimpan;
+        private TextBox tbNip;
+        private TextBox tbNama;
         private Label label4;
         private Label label3;
-        private TextBox textBox1;
         private Label label1;
+        private ComboBox cbStation;
     }
 }

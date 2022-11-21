@@ -1,9 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "NBhqmn5LLeY37ohdEKCPqxn9D7BsbDpSXc1SsH0I2A31dDzAZlMVtft+4DesbCIfzr/2Wq8J/5jp24q7PvDRpg==",
+=======
+  "dgSpecHash": "IGHTAD5fBq/Pw0JZNa5BodtZx+c/kFcOIzSB1OLI5WMmlYqxjOKCK5h6nEOXw4E4fI+pSD5ZdT3RfQn+cZhFLw==",
+>>>>>>> b0e28249eb3c92bdc1d17f8880fc2fe62db64360
   "success": true,
-  "projectFilePath": "D:\\PROGRAMMING\\COLLEGE-BICYCLE\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj",
+  "projectFilePath": "C:\\Users\\asus\\Source\\Repos\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj",
   "expectedPackageFiles": [
+<<<<<<< HEAD
     "C:\\Users\\sanim\\.nuget\\packages\\geocoding.core\\4.0.1\\geocoding.core.4.0.1.nupkg.sha512",
     "C:\\Users\\sanim\\.nuget\\packages\\geocoding.google\\4.0.1\\geocoding.google.4.0.1.nupkg.sha512",
     "C:\\Users\\sanim\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
@@ -83,6 +88,10 @@
     "C:\\Users\\sanim\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\sanim\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\sanim\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512"
+=======
+    "C:\\Users\\asus\\.nuget\\packages\\npgsql\\6.0.7\\npgsql.6.0.7.nupkg.sha512",
+    "C:\\Users\\asus\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+>>>>>>> b0e28249eb3c92bdc1d17f8880fc2fe62db64360
   ],
   "logs": []
 }
