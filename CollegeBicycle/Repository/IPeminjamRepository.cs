@@ -24,7 +24,6 @@ namespace CollegeBicycle.Repository
         public DataTable dt;
         public static NpgsqlCommand cmd;
         private string sql = null;
-        public DataTable dt;
 
         public List<Peminjam> GetAll()
         {

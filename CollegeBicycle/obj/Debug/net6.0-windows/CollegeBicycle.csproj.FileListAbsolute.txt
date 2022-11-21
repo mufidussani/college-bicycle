@@ -46,13 +46,9 @@ D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-w
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.pdb
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.genruntimeconfig.cache
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\ref\CollegeBicycle.dll
-<<<<<<< HEAD
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows\Geocoding.Core.dll
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows\Geocoding.Google.dll
-=======
-D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.AddSepeda.resources
-<<<<<<< HEAD
 C:\semester 5\Junior Project\kelompok\CollegeBicycle\bin\Debug\net6.0-windows\CollegeBicycle.exe
 C:\semester 5\Junior Project\kelompok\CollegeBicycle\bin\Debug\net6.0-windows\CollegeBicycle.deps.json
 C:\semester 5\Junior Project\kelompok\CollegeBicycle\bin\Debug\net6.0-windows\CollegeBicycle.runtimeconfig.json
@@ -113,7 +109,6 @@ C:\semester 5\Junior Project\college-bicycle\CollegeBicycle\obj\Debug\net6.0-win
 C:\semester 5\Junior Project\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.pdb
 C:\semester 5\Junior Project\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.genruntimeconfig.cache
 C:\semester 5\Junior Project\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\ref\CollegeBicycle.dll
-=======
 C:\Users\asus\Source\Repos\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows\CollegeBicycle.exe
 C:\Users\asus\Source\Repos\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows\CollegeBicycle.deps.json
 C:\Users\asus\Source\Repos\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows\CollegeBicycle.runtimeconfig.json
@@ -143,5 +138,5 @@ C:\Users\asus\Source\Repos\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windo
 C:\Users\asus\Source\Repos\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.pdb
 C:\Users\asus\Source\Repos\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.genruntimeconfig.cache
 C:\Users\asus\Source\Repos\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\ref\CollegeBicycle.dll
->>>>>>> b0e28249eb3c92bdc1d17f8880fc2fe62db64360
->>>>>>> 75300f4f4e38ff49598bf68ebca37990b0f6ae99
+D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.SignUp.resources
+D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll

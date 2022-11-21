@@ -164,6 +164,12 @@
 
         }
 
+        private void tbUsername_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+
         #endregion
 
         private Panel panel1;
@@ -171,6 +177,7 @@
         private Label lblPassword;
         private Label lblUsername;
         private TextBox tbPassword;
+        private TextBox tbUsername;
         private Label label1;
         private PictureBox pictureBox1;
         private Button btnSignUp;
