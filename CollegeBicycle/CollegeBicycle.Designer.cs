@@ -166,6 +166,7 @@
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(930, 76);
             this.panelTop.TabIndex = 2;
+            this.panelTop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTop_Paint);
             // 
             // labelProfile
             // 
@@ -175,9 +176,8 @@
             this.labelProfile.Location = new System.Drawing.Point(764, 26);
             this.labelProfile.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelProfile.Name = "labelProfile";
-            this.labelProfile.Size = new System.Drawing.Size(127, 28);
+            this.labelProfile.Size = new System.Drawing.Size(0, 28);
             this.labelProfile.TabIndex = 3;
-            this.labelProfile.Text = "Dinda Sabela";
             this.labelProfile.Click += new System.EventHandler(this.labelProfile_Click);
             // 
             // panelDesktop
@@ -221,7 +221,7 @@
         private PictureBox pictureProfile;
         private Label lblTitleApp;
         private Panel panelTop;
-        private Label labelProfile;
         private Panel panelDesktop;
+        public Label labelProfile;
     }
 }

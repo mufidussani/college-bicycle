@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.btnSimpan = new System.Windows.Forms.Button();
             this.tbNim = new System.Windows.Forms.TextBox();
             this.tbNama = new System.Windows.Forms.TextBox();
@@ -46,14 +46,15 @@
             this.dtpTanggalKembali = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
-            // button6
+            // btnUpdate
             // 
-            this.button6.Location = new System.Drawing.Point(591, 382);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(173, 29);
-            this.button6.TabIndex = 33;
-            this.button6.Text = "Hapus";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnUpdate.Location = new System.Drawing.Point(591, 382);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(173, 29);
+            this.btnUpdate.TabIndex = 33;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnSimpan
             // 
@@ -121,6 +122,7 @@
             // 
             // dtpTanggalPinjam
             // 
+            this.dtpTanggalPinjam.CustomFormat = "dd MMMM yyyy";
             this.dtpTanggalPinjam.Location = new System.Drawing.Point(354, 276);
             this.dtpTanggalPinjam.Name = "dtpTanggalPinjam";
             this.dtpTanggalPinjam.Size = new System.Drawing.Size(290, 27);
@@ -182,6 +184,7 @@
             // 
             // dtpTanggalKembali
             // 
+            this.dtpTanggalKembali.CustomFormat = "dd MMMM yyyy";
             this.dtpTanggalKembali.Enabled = false;
             this.dtpTanggalKembali.Location = new System.Drawing.Point(354, 320);
             this.dtpTanggalKembali.Name = "dtpTanggalKembali";
@@ -199,7 +202,7 @@
             this.Controls.Add(this.tbNoHp);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dtpTanggalPinjam);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnSimpan);
             this.Controls.Add(this.tbNim);
             this.Controls.Add(this.tbNama);
@@ -212,6 +215,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "AddPenggunaSepeda";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddPenggunaSepeda";
             this.Load += new System.EventHandler(this.AddPenggunaSepeda_Load);
             this.ResumeLayout(false);
@@ -220,21 +224,21 @@
         }
 
         #endregion
-        private Button button6;
+        private Button btnUpdate;
         private Button btnSimpan;
-        private TextBox tbNim;
-        private TextBox tbNama;
         private Label label4;
         private Label label3;
         private Label label5;
         private Label label6;
-        private DateTimePicker dtpTanggalPinjam;
         private Label label2;
         private Label label1;
         public TextBox tbStation;
         public TextBox tbKodeSepeda;
-        private TextBox tbNoHp;
         private Label label7;
-        private DateTimePicker dtpTanggalKembali;
+        public TextBox tbNama;
+        public TextBox tbNim;
+        public DateTimePicker dtpTanggalPinjam;
+        public TextBox tbNoHp;
+        public DateTimePicker dtpTanggalKembali;
     }
 }

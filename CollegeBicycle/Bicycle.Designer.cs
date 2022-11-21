@@ -48,23 +48,26 @@
             this.comboBoxStation.Size = new System.Drawing.Size(298, 36);
             this.comboBoxStation.TabIndex = 4;
             this.comboBoxStation.Text = "Pilih Station";
+            this.comboBoxStation.SelectedIndexChanged += new System.EventHandler(this.comboBoxStation_SelectedIndexChanged);
             // 
             // dgvSepeda
             // 
+            this.dgvSepeda.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvSepeda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSepeda.Location = new System.Drawing.Point(29, 63);
             this.dgvSepeda.Name = "dgvSepeda";
             this.dgvSepeda.RowHeadersWidth = 51;
             this.dgvSepeda.RowTemplate.Height = 29;
-            this.dgvSepeda.Size = new System.Drawing.Size(424, 358);
+            this.dgvSepeda.Size = new System.Drawing.Size(470, 358);
             this.dgvSepeda.TabIndex = 5;
             this.dgvSepeda.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSepeda_CellClick);
+            this.dgvSepeda.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSepeda_CellDoubleClick);
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(523, 289);
+            this.panel1.Location = new System.Drawing.Point(548, 289);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(292, 80);
             this.panel1.TabIndex = 6;
@@ -93,7 +96,7 @@
             // btnPinjam
             // 
             this.btnPinjam.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnPinjam.Location = new System.Drawing.Point(523, 386);
+            this.btnPinjam.Location = new System.Drawing.Point(548, 386);
             this.btnPinjam.Name = "btnPinjam";
             this.btnPinjam.Size = new System.Drawing.Size(137, 35);
             this.btnPinjam.TabIndex = 7;
@@ -104,7 +107,7 @@
             // btnTambahSepeda
             // 
             this.btnTambahSepeda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnTambahSepeda.Location = new System.Drawing.Point(678, 386);
+            this.btnTambahSepeda.Location = new System.Drawing.Point(703, 386);
             this.btnTambahSepeda.Name = "btnTambahSepeda";
             this.btnTambahSepeda.Size = new System.Drawing.Size(159, 35);
             this.btnTambahSepeda.TabIndex = 8;

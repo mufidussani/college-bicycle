@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CollegeBicycle
 {
@@ -41,7 +42,8 @@ namespace CollegeBicycle
                 {
                     MessageBox.Show("Login Berhasil! Selamat datang " + tbUsername.Text);
                     this.Hide();
-                    new CollegeBicycle().Show();
+                    CollegeBicycle collegebicycle = new CollegeBicycle();
+                    collegebicycle.ShowDialog();
                 }
                 else
                 {

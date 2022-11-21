@@ -108,6 +108,7 @@
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.Size = new System.Drawing.Size(241, 27);
             this.tbUsername.TabIndex = 2;
+            this.tbUsername.TextChanged += new System.EventHandler(this.tbUsername_TextChanged);
             // 
             // label1
             // 
@@ -170,7 +171,6 @@
         private Label lblPassword;
         private Label lblUsername;
         private TextBox tbPassword;
-        private TextBox tbUsername;
         private Label label1;
         private PictureBox pictureBox1;
         private Button btnSignUp;
