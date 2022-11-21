@@ -20,7 +20,7 @@ namespace CollegeBicycle
         readonly private SepedaRepository listSepeda = new SepedaRepository();
         readonly private StationRepository listStation = new StationRepository();
         private NpgsqlConnection conn;
-        string connstring = "Host=localhost;Port=5432;Username=mufidussani;Password=mufidussani;Database=collegebicycle";
+        string connstring = "Host=database-1.c3sblevz37wv.ap-northeast-1.rds.amazonaws.com;Port=5432;Username=postgres;Password=collegebicycle;Database=collegebicycle";
         public DataTable dt;
         public static NpgsqlCommand cmd;
         private string sql = null;

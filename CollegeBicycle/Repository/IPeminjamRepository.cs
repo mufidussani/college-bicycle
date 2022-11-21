@@ -17,10 +17,10 @@ namespace CollegeBicycle.Repository
     public class PeminjamRepository : IPeminjamRepository
     {
         private NpgsqlConnection conn;
-        string connstring = "Host=localhost;Port=5432;Username=mufidussani;Password=mufidussani;Database=collegebicycle";
-        public DataTable dt;
+        string connstring = "Host=database-1.c3sblevz37wv.ap-northeast-1.rds.amazonaws.com;Port=5432;Username=postgres;Password=collegebicycle;Database=collegebicycle";
         public static NpgsqlCommand cmd;
         private string sql = null;
+        public DataTable dt;
 
         public List<Peminjam> GetAll()
         {
