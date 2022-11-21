@@ -26,6 +26,7 @@ D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-w
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.csproj.AssemblyReference.cache
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.AddPengelola.resources
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.AddPenggunaSepeda.resources
+D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.AddSepeda.resources
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.Bicycle.resources
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.CollegeBicycle.resources
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.Employee.resources
@@ -45,4 +46,6 @@ D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-w
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.pdb
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.genruntimeconfig.cache
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\ref\CollegeBicycle.dll
-D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows\CollegeBicycle.AddSepeda.resources
+D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows\Geocoding.Core.dll
+D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows\Geocoding.Google.dll

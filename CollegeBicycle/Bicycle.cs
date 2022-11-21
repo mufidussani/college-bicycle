@@ -17,6 +17,7 @@ namespace CollegeBicycle
     public partial class Bicycle : Form
     {
         AddPenggunaSepeda addpenggunasepeda = new AddPenggunaSepeda();
+        AddSepeda addsepeda = new AddSepeda();
         readonly private SepedaRepository listSepeda = new SepedaRepository();
         readonly private StationRepository listStation = new StationRepository();
         private NpgsqlConnection conn;
@@ -37,8 +38,7 @@ namespace CollegeBicycle
 
         private void btnTambahSepeda_Click(object sender, EventArgs e)
         {
-            AddSepeda addsepeda = new AddSepeda(this);
-            addsepeda.Show();
+            addsepeda.ShowDialog();
         }
 
         private void Bicycle_Load(object sender, EventArgs e)
@@ -67,7 +67,8 @@ namespace CollegeBicycle
             //dgvSepeda.DataSource = dt;
             //conn.Close();
 
-            List<Sepeda> ListSepeda = listSepeda.GetAll();
+            //List<Sepeda> ListSepeda = listSepeda.GetAll();
+            List<Sepeda> ListSepeda = listSepeda.GetSpesificStation(comboBoxStation.SelectedIndex);
             dgvSepeda.DataSource = ListSepeda;
         }
 
@@ -83,7 +84,34 @@ namespace CollegeBicycle
                 r = dgvSepeda.Rows[e.RowIndex];
                 addpenggunasepeda.tbStation.Text = r.Cells["nama_station"].Value.ToString();
                 addpenggunasepeda.tbKodeSepeda.Text = r.Cells["kode_sepeda"].Value.ToString();
+                addsepeda.comboBoxStation.Text = r.Cells["nama_station"].Value.ToString();
+                addsepeda.tbKodeSepeda.Text = r.Cells["kode_sepeda"].Value.ToString();
+                addsepeda.tbLokasiSepeda.Text = r.Cells["lokasi_sepeda"].Value.ToString();
+                addsepeda.comboBoxKetersediaan.Text = r.Cells["ketersediaan_sepeda"].Value.ToString();
             }
+        }
+        public void UpdateDgv()
+        {
+            List<Sepeda> ListSepeda = listSepeda.GetAll();
+            dgvSepeda.DataSource = ListSepeda;
+        }
+
+        private void dgvSepeda_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (MessageBox.Show("Apakah benar ingin menghapus data sepeda " + r.Cells["kode_sepeda"].Value.ToString() + "?", "Konfirmasi hapus data", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            {
+                var ids = dgvSepeda.Rows[e.RowIndex].Cells[0].Value;
+                listSepeda.Delete((int)ids);
+                MessageBox.Show("Hapus data berhasil!");
+
+                UpdateDgv();
+            }
+        }
+
+        private void comboBoxStation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            List<Sepeda> ListSepeda = listSepeda.GetSpesificStation(comboBoxStation.SelectedIndex);
+            dgvSepeda.DataSource = ListSepeda;
         }
     }
 }

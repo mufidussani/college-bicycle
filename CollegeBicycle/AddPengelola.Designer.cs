@@ -122,7 +122,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Name = "AddPengelola";
-            this.Text = "AddPengelola";
+            this.Text = "0";
             this.ResumeLayout(false);
             this.PerformLayout();
 

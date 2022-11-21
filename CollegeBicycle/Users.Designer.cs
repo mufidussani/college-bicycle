@@ -53,6 +53,7 @@
             this.comboBoxStation.Size = new System.Drawing.Size(218, 28);
             this.comboBoxStation.TabIndex = 5;
             this.comboBoxStation.Text = "Pilih Station...";
+            this.comboBoxStation.SelectedIndexChanged += new System.EventHandler(this.comboBoxStation_SelectedIndexChanged);
             // 
             // dgvPeminjam
             // 
@@ -65,6 +66,7 @@
             this.dgvPeminjam.Size = new System.Drawing.Size(819, 279);
             this.dgvPeminjam.TabIndex = 6;
             this.dgvPeminjam.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPeminjam_CellClick);
+            this.dgvPeminjam.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPeminjam_CellDoubleClick);
             // 
             // btnUpdateForm
             // 
@@ -98,7 +100,7 @@
         #endregion
         private Label label1;
         private ComboBox comboBoxStation;
-        private DataGridView dgvPeminjam;
         private Button btnUpdateForm;
+        public DataGridView dgvPeminjam;
     }
 }
