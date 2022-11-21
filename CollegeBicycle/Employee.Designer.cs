@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgvEmployee = new System.Windows.Forms.DataGridView();
+            this.btnTambah = new System.Windows.Forms.Button();
+            this.btn_Load = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -43,15 +45,35 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Informasi Pengelola Sepeda Kampus";
             // 
-            // dataGridView1
+            // dgvEmployee
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(94, 88);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(715, 323);
-            this.dataGridView1.TabIndex = 6;
+            this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEmployee.Location = new System.Drawing.Point(94, 88);
+            this.dgvEmployee.Name = "dgvEmployee";
+            this.dgvEmployee.RowHeadersWidth = 51;
+            this.dgvEmployee.RowTemplate.Height = 29;
+            this.dgvEmployee.Size = new System.Drawing.Size(715, 299);
+            this.dgvEmployee.TabIndex = 6;
+            // 
+            // btnTambah
+            // 
+            this.btnTambah.Location = new System.Drawing.Point(634, 401);
+            this.btnTambah.Name = "btnTambah";
+            this.btnTambah.Size = new System.Drawing.Size(175, 29);
+            this.btnTambah.TabIndex = 7;
+            this.btnTambah.Text = "Tambah Pengelola";
+            this.btnTambah.UseVisualStyleBackColor = true;
+            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
+            // 
+            // btn_Load
+            // 
+            this.btn_Load.Location = new System.Drawing.Point(480, 401);
+            this.btn_Load.Name = "btn_Load";
+            this.btn_Load.Size = new System.Drawing.Size(140, 29);
+            this.btn_Load.TabIndex = 8;
+            this.btn_Load.Text = "Load Tabel";
+            this.btn_Load.UseVisualStyleBackColor = true;
+            this.btn_Load.Click += new System.EventHandler(this.btn_Load_Click);
             // 
             // Employee
             // 
@@ -59,11 +81,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(230)))));
             this.ClientSize = new System.Drawing.Size(912, 442);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btn_Load);
+            this.Controls.Add(this.btnTambah);
+            this.Controls.Add(this.dgvEmployee);
             this.Controls.Add(this.label1);
             this.Name = "Employee";
             this.Text = "Employee";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Employee_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmployee)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -71,6 +96,8 @@
 
         #endregion
         private Label label1;
-        private DataGridView dataGridView1;
+        private DataGridView dgvEmployee;
+        private Button btnTambah;
+        private Button btn_Load;
     }
 }

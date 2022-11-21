@@ -85,5 +85,10 @@ namespace CollegeBicycle
                 addpenggunasepeda.tbKodeSepeda.Text = r.Cells["kode_sepeda"].Value.ToString();
             }
         }
+
+        private void comboBoxStation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -48,6 +48,7 @@
             this.comboBoxStation.Size = new System.Drawing.Size(298, 36);
             this.comboBoxStation.TabIndex = 4;
             this.comboBoxStation.Text = "Pilih Station";
+            this.comboBoxStation.SelectedIndexChanged += new System.EventHandler(this.comboBoxStation_SelectedIndexChanged);
             // 
             // dgvSepeda
             // 
