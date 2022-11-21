@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W8GEv7vMYzWyz2ybvwibDtAVNsw7I9dHPyGRwptdzKZMbPZY3hWnNBBf0xOJ9yJDZ8qgKNtOSeDtRlsq5zCpMg==",
+  "dgSpecHash": "N+mnLTofklKP80GaEzcc36ZihzlX/UbG7ftYP8zQNZqBhk20KdUbeevVx2ceSZVTUeALHl/S7RjCfwBDydZ6tQ==",
   "success": true,
-  "projectFilePath": "C:\\semester 5\\Junior Project\\kelompok\\CollegeBicycle\\CollegeBicycle.csproj",
+  "projectFilePath": "C:\\semester 5\\Junior Project\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\npgsql\\6.0.7\\npgsql.6.0.7.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"

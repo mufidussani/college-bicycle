@@ -97,11 +97,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\semester 5\\Junior Project\\kelompok\\CollegeBicycle\\CollegeBicycle.csproj",
+      "projectUniqueName": "C:\\semester 5\\Junior Project\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj",
       "projectName": "CollegeBicycle",
-      "projectPath": "C:\\semester 5\\Junior Project\\kelompok\\CollegeBicycle\\CollegeBicycle.csproj",
+      "projectPath": "C:\\semester 5\\Junior Project\\college-bicycle\\CollegeBicycle\\CollegeBicycle.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\semester 5\\Junior Project\\kelompok\\CollegeBicycle\\obj\\",
+      "outputPath": "C:\\semester 5\\Junior Project\\college-bicycle\\CollegeBicycle\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
