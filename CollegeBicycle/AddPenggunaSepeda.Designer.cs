@@ -48,6 +48,7 @@
             // 
             // btnUpdate
             // 
+            this.btnUpdate.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnUpdate.Location = new System.Drawing.Point(591, 382);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(173, 29);
@@ -58,6 +59,7 @@
             // 
             // btnSimpan
             // 
+            this.btnSimpan.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSimpan.Location = new System.Drawing.Point(394, 382);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(173, 29);
@@ -68,117 +70,123 @@
             // 
             // tbNim
             // 
+            this.tbNim.Font = new System.Drawing.Font("Gill Sans MT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tbNim.Location = new System.Drawing.Point(355, 178);
             this.tbNim.Name = "tbNim";
-            this.tbNim.Size = new System.Drawing.Size(290, 27);
+            this.tbNim.Size = new System.Drawing.Size(290, 28);
             this.tbNim.TabIndex = 30;
             // 
             // tbNama
             // 
+            this.tbNama.Font = new System.Drawing.Font("Gill Sans MT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tbNama.Location = new System.Drawing.Point(355, 127);
             this.tbNama.Name = "tbNama";
-            this.tbNama.Size = new System.Drawing.Size(290, 27);
+            this.tbNama.Size = new System.Drawing.Size(290, 28);
             this.tbNama.TabIndex = 29;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Gill Sans MT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(97, 174);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(149, 28);
+            this.label4.Size = new System.Drawing.Size(130, 27);
             this.label4.TabIndex = 24;
             this.label4.Text = "NIM Peminjam :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Gill Sans MT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(97, 123);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(163, 28);
+            this.label3.Size = new System.Drawing.Size(141, 27);
             this.label3.TabIndex = 23;
             this.label3.Text = "Nama Peminjam :";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Font = new System.Drawing.Font("Gill Sans MT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(96, 274);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(200, 28);
+            this.label5.Size = new System.Drawing.Size(170, 27);
             this.label5.TabIndex = 25;
             this.label5.Text = "Tanggal Peminjaman :";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Font = new System.Drawing.Font("Gill Sans MT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(96, 318);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(217, 28);
+            this.label6.Size = new System.Drawing.Size(182, 27);
             this.label6.TabIndex = 26;
             this.label6.Text = "Tanggal Pengembalian :";
             // 
             // dtpTanggalPinjam
             // 
             this.dtpTanggalPinjam.CustomFormat = "dd MMMM yyyy";
+            this.dtpTanggalPinjam.Font = new System.Drawing.Font("Gill Sans MT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpTanggalPinjam.Location = new System.Drawing.Point(354, 276);
             this.dtpTanggalPinjam.Name = "dtpTanggalPinjam";
-            this.dtpTanggalPinjam.Size = new System.Drawing.Size(290, 27);
+            this.dtpTanggalPinjam.Size = new System.Drawing.Size(290, 28);
             this.dtpTanggalPinjam.TabIndex = 34;
             this.dtpTanggalPinjam.ValueChanged += new System.EventHandler(this.dtpTanggalPinjam_ValueChanged);
             // 
             // tbKodeSepeda
             // 
             this.tbKodeSepeda.Enabled = false;
+            this.tbKodeSepeda.Font = new System.Drawing.Font("Gill Sans MT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tbKodeSepeda.Location = new System.Drawing.Point(355, 78);
             this.tbKodeSepeda.Name = "tbKodeSepeda";
-            this.tbKodeSepeda.Size = new System.Drawing.Size(290, 27);
+            this.tbKodeSepeda.Size = new System.Drawing.Size(290, 28);
             this.tbKodeSepeda.TabIndex = 28;
             // 
             // tbStation
             // 
             this.tbStation.Enabled = false;
+            this.tbStation.Font = new System.Drawing.Font("Gill Sans MT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tbStation.Location = new System.Drawing.Point(354, 30);
             this.tbStation.Name = "tbStation";
-            this.tbStation.Size = new System.Drawing.Size(290, 27);
+            this.tbStation.Size = new System.Drawing.Size(290, 28);
             this.tbStation.TabIndex = 27;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Gill Sans MT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(97, 74);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 28);
+            this.label2.Size = new System.Drawing.Size(118, 27);
             this.label2.TabIndex = 22;
             this.label2.Text = "Kode Sepeda :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Gill Sans MT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(97, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 28);
+            this.label1.Size = new System.Drawing.Size(72, 27);
             this.label1.TabIndex = 21;
             this.label1.Text = "Station :";
             // 
             // tbNoHp
             // 
+            this.tbNoHp.Font = new System.Drawing.Font("Gill Sans MT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tbNoHp.Location = new System.Drawing.Point(354, 230);
             this.tbNoHp.Name = "tbNoHp";
-            this.tbNoHp.Size = new System.Drawing.Size(290, 27);
+            this.tbNoHp.Size = new System.Drawing.Size(290, 28);
             this.tbNoHp.TabIndex = 36;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Font = new System.Drawing.Font("Gill Sans MT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(96, 226);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(160, 28);
+            this.label7.Size = new System.Drawing.Size(139, 27);
             this.label7.TabIndex = 35;
             this.label7.Text = "No. Handphone :";
             // 
@@ -186,9 +194,10 @@
             // 
             this.dtpTanggalKembali.CustomFormat = "dd MMMM yyyy";
             this.dtpTanggalKembali.Enabled = false;
+            this.dtpTanggalKembali.Font = new System.Drawing.Font("Gill Sans MT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpTanggalKembali.Location = new System.Drawing.Point(354, 320);
             this.dtpTanggalKembali.Name = "dtpTanggalKembali";
-            this.dtpTanggalKembali.Size = new System.Drawing.Size(290, 27);
+            this.dtpTanggalKembali.Size = new System.Drawing.Size(290, 28);
             this.dtpTanggalKembali.TabIndex = 37;
             this.dtpTanggalKembali.ValueChanged += new System.EventHandler(this.tanggalKembali_ValueChanged);
             // 

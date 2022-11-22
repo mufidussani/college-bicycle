@@ -38,15 +38,16 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Gill Sans MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(292, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 28);
+            this.label1.Size = new System.Drawing.Size(306, 29);
             this.label1.TabIndex = 5;
             this.label1.Text = "Informasi Pengelola Sepeda Kampus";
             // 
             // dgvEmployee
             // 
+            this.dgvEmployee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEmployee.Location = new System.Drawing.Point(94, 88);
             this.dgvEmployee.Name = "dgvEmployee";
@@ -57,6 +58,7 @@
             // 
             // btnTambah
             // 
+            this.btnTambah.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnTambah.Location = new System.Drawing.Point(634, 401);
             this.btnTambah.Name = "btnTambah";
             this.btnTambah.Size = new System.Drawing.Size(175, 29);
@@ -67,6 +69,7 @@
             // 
             // btn_Load
             // 
+            this.btn_Load.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btn_Load.Location = new System.Drawing.Point(480, 401);
             this.btn_Load.Name = "btn_Load";
             this.btn_Load.Size = new System.Drawing.Size(140, 29);

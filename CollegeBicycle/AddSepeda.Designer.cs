@@ -45,7 +45,8 @@
             // 
             // tbKodeSepeda
             // 
-            this.tbKodeSepeda.Location = new System.Drawing.Point(412, 137);
+            this.tbKodeSepeda.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbKodeSepeda.Location = new System.Drawing.Point(392, 137);
             this.tbKodeSepeda.Name = "tbKodeSepeda";
             this.tbKodeSepeda.Size = new System.Drawing.Size(290, 27);
             this.tbKodeSepeda.TabIndex = 32;
@@ -53,26 +54,27 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(154, 133);
+            this.label2.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(134, 133);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 28);
+            this.label2.Size = new System.Drawing.Size(112, 25);
             this.label2.TabIndex = 30;
             this.label2.Text = "Kode Sepeda :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(155, 73);
+            this.label1.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(135, 73);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 28);
+            this.label1.Size = new System.Drawing.Size(70, 25);
             this.label1.TabIndex = 29;
             this.label1.Text = "Station :";
             // 
             // btnSimpan
             // 
-            this.btnSimpan.Location = new System.Drawing.Point(428, 363);
+            this.btnSimpan.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSimpan.Location = new System.Drawing.Point(408, 363);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(173, 29);
             this.btnSimpan.TabIndex = 34;
@@ -82,16 +84,18 @@
             // 
             // comboBoxStation
             // 
+            this.comboBoxStation.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBoxStation.FormattingEnabled = true;
-            this.comboBoxStation.Location = new System.Drawing.Point(412, 73);
+            this.comboBoxStation.Location = new System.Drawing.Point(392, 73);
             this.comboBoxStation.Name = "comboBoxStation";
-            this.comboBoxStation.Size = new System.Drawing.Size(290, 28);
+            this.comboBoxStation.Size = new System.Drawing.Size(290, 33);
             this.comboBoxStation.TabIndex = 36;
             this.comboBoxStation.SelectedIndexChanged += new System.EventHandler(this.comboBoxStation_SelectedIndexChanged);
             // 
             // tbLokasiSepeda
             // 
-            this.tbLokasiSepeda.Location = new System.Drawing.Point(412, 202);
+            this.tbLokasiSepeda.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbLokasiSepeda.Location = new System.Drawing.Point(392, 202);
             this.tbLokasiSepeda.Name = "tbLokasiSepeda";
             this.tbLokasiSepeda.Size = new System.Drawing.Size(290, 27);
             this.tbLokasiSepeda.TabIndex = 38;
@@ -99,28 +103,29 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(154, 198);
+            this.label3.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(134, 198);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 28);
+            this.label3.Size = new System.Drawing.Size(118, 25);
             this.label3.TabIndex = 37;
             this.label3.Text = "Lokasi Sepeda :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(154, 304);
+            this.label4.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(134, 304);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(203, 28);
+            this.label4.Size = new System.Drawing.Size(166, 25);
             this.label4.TabIndex = 39;
             this.label4.Text = "Ketersediaan Sepeda :";
             // 
             // btnKoordinat
             // 
-            this.btnKoordinat.Location = new System.Drawing.Point(736, 188);
+            this.btnKoordinat.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnKoordinat.Location = new System.Drawing.Point(713, 187);
             this.btnKoordinat.Name = "btnKoordinat";
-            this.btnKoordinat.Size = new System.Drawing.Size(90, 54);
+            this.btnKoordinat.Size = new System.Drawing.Size(96, 61);
             this.btnKoordinat.TabIndex = 41;
             this.btnKoordinat.Text = "Tampilkan\r\nKoordinat";
             this.btnKoordinat.UseVisualStyleBackColor = true;
@@ -129,25 +134,26 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(155, 256);
+            this.label5.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(135, 256);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(179, 28);
+            this.label5.Size = new System.Drawing.Size(146, 25);
             this.label5.TabIndex = 42;
             this.label5.Text = "Koordinat Sepeda :";
             // 
             // lblLatLong
             // 
             this.lblLatLong.AutoSize = true;
-            this.lblLatLong.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblLatLong.Location = new System.Drawing.Point(412, 263);
+            this.lblLatLong.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblLatLong.Location = new System.Drawing.Point(392, 263);
             this.lblLatLong.Name = "lblLatLong";
-            this.lblLatLong.Size = new System.Drawing.Size(0, 23);
+            this.lblLatLong.Size = new System.Drawing.Size(0, 25);
             this.lblLatLong.TabIndex = 43;
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(628, 363);
+            this.btnUpdate.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnUpdate.Location = new System.Drawing.Point(608, 363);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(173, 29);
             this.btnUpdate.TabIndex = 44;
@@ -157,13 +163,14 @@
             // 
             // comboBoxKetersediaan
             // 
+            this.comboBoxKetersediaan.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBoxKetersediaan.FormattingEnabled = true;
             this.comboBoxKetersediaan.Items.AddRange(new object[] {
             "Tersedia",
             "Tidak Tersedia"});
-            this.comboBoxKetersediaan.Location = new System.Drawing.Point(412, 308);
+            this.comboBoxKetersediaan.Location = new System.Drawing.Point(392, 308);
             this.comboBoxKetersediaan.Name = "comboBoxKetersediaan";
-            this.comboBoxKetersediaan.Size = new System.Drawing.Size(290, 28);
+            this.comboBoxKetersediaan.Size = new System.Drawing.Size(290, 33);
             this.comboBoxKetersediaan.TabIndex = 45;
             // 
             // AddSepeda

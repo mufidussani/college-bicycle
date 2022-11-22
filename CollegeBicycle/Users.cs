@@ -81,7 +81,7 @@ namespace CollegeBicycle
 
         private void dgvPeminjam_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (MessageBox.Show("Apakah benar ingin menghapus data peminjam " + r.Cells["nama_peminjam"].Value.ToString() + "dengan kode sepeda " + r.Cells["kode_sepeda"] + "?", "Konfirmasi hapus data", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            if (MessageBox.Show("Apakah benar ingin menghapus data peminjam " + r.Cells["nama_peminjam"].Value.ToString() + " dengan kode sepeda " + r.Cells["kode_sepeda"].Value.ToString() + "?", "Konfirmasi hapus data", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
             {
                 var ids = dgvPeminjam.Rows[e.RowIndex].Cells[0].Value;
                 listPeminjam.Delete((int)ids);

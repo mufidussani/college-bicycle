@@ -13,6 +13,7 @@ namespace CollegeBicycle.Repository
     {
         List<Peminjam> GetAll();
         List<Peminjam> GetSpesificStation(string name);
+        List<Peminjams> GetPengguna();
         void Add(string nama_station, string kode_sepeda, string nama_peminjam, string nim_peminjam, string no_hp, DateTime tanggal_pinjam, DateTime tanggal_kembali);
         void Update(int id_peminjam, string nama_station, string kode_sepeda, string nama_peminjam, string nim_peminjam, string no_hp, DateTime tanggal_pinjam, DateTime tanggal_kembali);
         void Delete(int id_peminjam);
@@ -117,6 +118,31 @@ namespace CollegeBicycle.Repository
                     nama_station = rd["nama_station"].ToString(),
                     tanggal_pinjam = rd["tanggal_pinjam"].ToString(),
                     tanggal_kembali = rd["tanggal_kembali"].ToString()
+                };
+                listPeminjam.Add(newPeminjam);
+            }
+            rd.Close();
+            conn.Close();
+            return listPeminjam;
+        }
+
+        public List<Peminjams> GetPengguna()
+        {
+            List<Peminjams> listPeminjam = new List<Peminjams>();
+            conn = new NpgsqlConnection(connstring);
+            conn.Open();
+            sql = "select kode_sepeda, nama_peminjam, no_handphone from peminjam";
+            cmd = new NpgsqlCommand(sql, conn);
+            dt = new DataTable();
+            NpgsqlDataReader rd = cmd.ExecuteReader();
+            Console.WriteLine(rd.ToString());
+            while (rd.Read())
+            {
+                Peminjams newPeminjam = new Peminjams
+                {
+                    nama_peminjam = rd["nama_peminjam"].ToString(),
+                    no_hp = rd["no_handphone"].ToString(),
+                    kode_sepeda = rd["kode_sepeda"].ToString(),
                 };
                 listPeminjam.Add(newPeminjam);
             }

@@ -42,7 +42,7 @@ namespace CollegeBicycle
                 {
                     MessageBox.Show("Login Berhasil! Selamat datang " + tbUsername.Text);
                     this.Hide();
-                    CollegeBicycle collegebicycle = new CollegeBicycle();
+                    CollegeBicycle collegebicycle = new CollegeBicycle(tbUsername.Text);
                     collegebicycle.ShowDialog();
                 }
                 else

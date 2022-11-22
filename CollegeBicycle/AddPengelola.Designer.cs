@@ -39,6 +39,7 @@
             // 
             // btnSimpan
             // 
+            this.btnSimpan.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSimpan.Location = new System.Drawing.Point(483, 343);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(173, 29);
@@ -49,6 +50,7 @@
             // 
             // tbNip
             // 
+            this.tbNip.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tbNip.Location = new System.Drawing.Point(366, 146);
             this.tbNip.Name = "tbNip";
             this.tbNip.Size = new System.Drawing.Size(290, 27);
@@ -56,6 +58,7 @@
             // 
             // tbNama
             // 
+            this.tbNama.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tbNama.Location = new System.Drawing.Point(366, 89);
             this.tbNama.Name = "tbNama";
             this.tbNama.Size = new System.Drawing.Size(290, 27);
@@ -64,39 +67,40 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(108, 142);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 28);
+            this.label4.Size = new System.Drawing.Size(118, 25);
             this.label4.TabIndex = 21;
             this.label4.Text = "NIP Pengelola :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(108, 85);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(163, 28);
+            this.label3.Size = new System.Drawing.Size(132, 25);
             this.label3.TabIndex = 20;
             this.label3.Text = "Nama Pengelola :";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(108, 202);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 28);
+            this.label1.Size = new System.Drawing.Size(70, 25);
             this.label1.TabIndex = 26;
             this.label1.Text = "Station :";
             // 
             // cbStation
             // 
+            this.cbStation.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbStation.FormattingEnabled = true;
             this.cbStation.Location = new System.Drawing.Point(366, 202);
             this.cbStation.Name = "cbStation";
-            this.cbStation.Size = new System.Drawing.Size(290, 28);
+            this.cbStation.Size = new System.Drawing.Size(290, 33);
             this.cbStation.TabIndex = 27;
             this.cbStation.SelectedIndexChanged += new System.EventHandler(this.cbStation_SelectedIndexChanged);
             // 

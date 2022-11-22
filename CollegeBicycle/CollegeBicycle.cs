@@ -13,9 +13,10 @@ namespace CollegeBicycle
     public partial class CollegeBicycle : Form
     {
         private Form activeForm;
-        public CollegeBicycle()
+        public CollegeBicycle(string username)
         {
             InitializeComponent();
+            labelProfile.Text = username;
         }
         private void OpenChildForm(Form childForm, object btnSender)
         {

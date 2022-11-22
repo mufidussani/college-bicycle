@@ -31,8 +31,9 @@
             this.comboBoxStation = new System.Windows.Forms.ComboBox();
             this.dgvSepeda = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.tbLokasi = new System.Windows.Forms.TextBox();
+            this.lblLokasiSepeda = new System.Windows.Forms.Label();
+            this.lblKetersediaan = new System.Windows.Forms.Label();
             this.btnPinjam = new System.Windows.Forms.Button();
             this.btnTambahSepeda = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSepeda)).BeginInit();
@@ -41,11 +42,11 @@
             // 
             // comboBoxStation
             // 
-            this.comboBoxStation.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.comboBoxStation.Font = new System.Drawing.Font("Gill Sans MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBoxStation.FormattingEnabled = true;
             this.comboBoxStation.Location = new System.Drawing.Point(29, 15);
             this.comboBoxStation.Name = "comboBoxStation";
-            this.comboBoxStation.Size = new System.Drawing.Size(298, 36);
+            this.comboBoxStation.Size = new System.Drawing.Size(298, 37);
             this.comboBoxStation.TabIndex = 4;
             this.comboBoxStation.Text = "Pilih Station";
             this.comboBoxStation.SelectedIndexChanged += new System.EventHandler(this.comboBoxStation_SelectedIndexChanged);
@@ -65,37 +66,48 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.tbLokasi);
+            this.panel1.Controls.Add(this.lblLokasiSepeda);
+            this.panel1.Controls.Add(this.lblKetersediaan);
+            this.panel1.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.panel1.Location = new System.Drawing.Point(548, 289);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(292, 80);
             this.panel1.TabIndex = 6;
             // 
-            // label2
+            // tbLokasi
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(10, 37);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(254, 28);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Lokasi: -7.77070, 110.37655";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.tbLokasi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(239)))), ((int)(((byte)(230)))));
+            this.tbLokasi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbLokasi.Font = new System.Drawing.Font("Gill Sans MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbLokasi.Location = new System.Drawing.Point(16, 45);
+            this.tbLokasi.Name = "tbLokasi";
+            this.tbLokasi.Size = new System.Drawing.Size(257, 24);
+            this.tbLokasi.TabIndex = 8;
             // 
-            // label1
+            // lblLokasiSepeda
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(10, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 28);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Tersedia : Tidak";
+            this.lblLokasiSepeda.AutoSize = true;
+            this.lblLokasiSepeda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblLokasiSepeda.Location = new System.Drawing.Point(10, 37);
+            this.lblLokasiSepeda.Name = "lblLokasiSepeda";
+            this.lblLokasiSepeda.Size = new System.Drawing.Size(0, 28);
+            this.lblLokasiSepeda.TabIndex = 7;
+            this.lblLokasiSepeda.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // lblKetersediaan
+            // 
+            this.lblKetersediaan.AutoSize = true;
+            this.lblKetersediaan.Font = new System.Drawing.Font("Gill Sans MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblKetersediaan.Location = new System.Drawing.Point(10, 9);
+            this.lblKetersediaan.Name = "lblKetersediaan";
+            this.lblKetersediaan.Size = new System.Drawing.Size(145, 29);
+            this.lblKetersediaan.TabIndex = 0;
+            this.lblKetersediaan.Text = "Tersedia : Tidak";
             // 
             // btnPinjam
             // 
-            this.btnPinjam.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnPinjam.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnPinjam.Location = new System.Drawing.Point(548, 386);
             this.btnPinjam.Name = "btnPinjam";
             this.btnPinjam.Size = new System.Drawing.Size(137, 35);
@@ -106,7 +118,7 @@
             // 
             // btnTambahSepeda
             // 
-            this.btnTambahSepeda.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnTambahSepeda.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnTambahSepeda.Location = new System.Drawing.Point(703, 386);
             this.btnTambahSepeda.Name = "btnTambahSepeda";
             this.btnTambahSepeda.Size = new System.Drawing.Size(159, 35);
@@ -139,10 +151,11 @@
         #endregion
         private ComboBox comboBoxStation;
         private Panel panel1;
-        private Label label2;
-        private Label label1;
+        private Label lblLokasiSepeda;
+        private Label lblKetersediaan;
         private Button btnPinjam;
         private Button btnTambahSepeda;
         public DataGridView dgvSepeda;
+        private TextBox tbLokasi;
     }
 }

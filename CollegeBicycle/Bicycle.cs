@@ -8,9 +8,12 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace CollegeBicycle
 {
@@ -18,6 +21,7 @@ namespace CollegeBicycle
     {
         AddPenggunaSepeda addpenggunasepeda = new AddPenggunaSepeda();
         AddSepeda addsepeda = new AddSepeda();
+        Homepage homepage = new Homepage();
         readonly private SepedaRepository listSepeda = new SepedaRepository();
         readonly private StationRepository listStation = new StationRepository();
         private NpgsqlConnection conn;
@@ -29,6 +33,11 @@ namespace CollegeBicycle
         public Bicycle()
         {
             InitializeComponent();
+            tbLokasi.Text = "Hello, Select Me";
+            tbLokasi.ReadOnly = true;
+            tbLokasi.BorderStyle = 0;
+            tbLokasi.BackColor = this.BackColor;
+            tbLokasi.TabStop = false;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -43,6 +52,7 @@ namespace CollegeBicycle
 
         private void Bicycle_Load(object sender, EventArgs e)
         {
+            
             conn = new NpgsqlConnection(connstring);
             conn.Open();
             //combo box station
@@ -88,6 +98,7 @@ namespace CollegeBicycle
                 addsepeda.tbKodeSepeda.Text = r.Cells["kode_sepeda"].Value.ToString();
                 addsepeda.tbLokasiSepeda.Text = r.Cells["lokasi_sepeda"].Value.ToString();
                 addsepeda.comboBoxKetersediaan.Text = r.Cells["ketersediaan_sepeda"].Value.ToString();
+                tbLokasi.Text = "Lokasi: " + r.Cells["lokasi_sepeda"].Value.ToString();
             }
         }
         public void UpdateDgv()
