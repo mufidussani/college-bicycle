@@ -98,41 +98,6 @@
           "Microsoft.WindowsDesktop.App.WindowsForms"
         ]
       },
-      "GMap.NET.WinForms.Utils/2.1.7": {
-        "type": "package",
-        "dependencies": {
-          "GMap.NET.Core": "2.1.7",
-          "GMap.NET.WinForms": "2.1.7",
-          "LINQPad": "5.40.0",
-          "Polylines": "1.0.0",
-          "System.ValueTuple": "4.5.0"
-        },
-        "compile": {
-          "lib/net461/GMap.NET.WindowsForms.Utils.dll": {}
-        },
-        "runtime": {
-          "lib/net461/GMap.NET.WindowsForms.Utils.dll": {}
-        }
-      },
-      "LINQPad/5.40.0": {
-        "type": "package",
-        "compile": {
-          "lib/net46/LINQPad.exe": {
-            "related": ".exe.config"
-          },
-          "lib/net46/lprun.exe": {
-            "related": ".exe.config"
-          }
-        },
-        "runtime": {
-          "lib/net46/LINQPad.exe": {
-            "related": ".exe.config"
-          },
-          "lib/net46/lprun.exe": {
-            "related": ".exe.config"
-          }
-        }
-      },
       "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
@@ -315,15 +280,6 @@
           "lib/net6.0/Npgsql.dll": {
             "related": ".xml"
           }
-        }
-      },
-      "Polylines/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/Polylines.dll": {}
-        },
-        "runtime": {
-          "lib/Polylines.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -1760,15 +1716,6 @@
           }
         }
       },
-      "System.ValueTuple/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/_._": {}
-        }
-      },
       "System.Windows.Extensions/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -2002,41 +1949,6 @@
         "lib/netcoreapp3.0/GMap.NET.WindowsForms.runtimeconfig.json",
         "lib/netcoreapp3.1/GMap.NET.WindowsForms.dll",
         "lib/netcoreapp3.1/GMap.NET.WindowsForms.runtimeconfig.json"
-      ]
-    },
-    "GMap.NET.WinForms.Utils/2.1.7": {
-      "sha512": "aM1gMnOMzhccVZW0mtl/V99rRfSiJbUoc47YTJrOFGMtSnM6JhphcJRjMXluE6Jgqr+BXZEPPrBNd1yGegUpag==",
-      "type": "package",
-      "path": "gmap.net.winforms.utils/2.1.7",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "gmap.net.winforms.utils.2.1.7.nupkg.sha512",
-        "gmap.net.winforms.utils.nuspec",
-        "lib/net46/GMap.NET.WindowsForms.Utils.dll",
-        "lib/net461/GMap.NET.WindowsForms.Utils.dll",
-        "lib/net462/GMap.NET.WindowsForms.Utils.dll",
-        "lib/net47/GMap.NET.WindowsForms.Utils.dll",
-        "lib/net471/GMap.NET.WindowsForms.Utils.dll",
-        "lib/net472/GMap.NET.WindowsForms.Utils.dll",
-        "lib/net48/GMap.NET.WindowsForms.Utils.dll"
-      ]
-    },
-    "LINQPad/5.40.0": {
-      "sha512": "NP/h6aSYNytwkFmMGYRRlNTBnBSmMFLE05LPreq2OLxCJNxhN8q5RhUbAI87LUzwXFVnjPBZvTeOBhtqiBEgkQ==",
-      "type": "package",
-      "path": "linqpad/5.40.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/LINQPad.exe",
-        "lib/net40/LINQPad.exe.config",
-        "lib/net46/LINQPad.exe",
-        "lib/net46/LINQPad.exe.config",
-        "lib/net46/lprun.exe",
-        "lib/net46/lprun.exe.config",
-        "linqpad.5.40.0.nupkg.sha512",
-        "linqpad.nuspec"
       ]
     },
     "Microsoft.CSharp/4.7.0": {
@@ -2369,18 +2281,6 @@
         "npgsql.7.0.0.nupkg.sha512",
         "npgsql.nuspec",
         "postgresql.png"
-      ]
-    },
-    "Polylines/1.0.0": {
-      "sha512": "9WAUaLSVSWf0B+eLx965m3iw6Lbqx5kOlsfOk/lvWHHigG7JGwBWukXDVMlfpCXmho6Kh/EzGQlITXmP9LsE4Q==",
-      "type": "package",
-      "path": "polylines/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/Polylines.dll",
-        "polylines.1.0.0.nupkg.sha512",
-        "polylines.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -6030,50 +5930,6 @@
         "system.threading.timer.nuspec"
       ]
     },
-    "System.ValueTuple/4.5.0": {
-      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
-      "type": "package",
-      "path": "system.valuetuple/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net461/System.ValueTuple.dll",
-        "lib/net461/System.ValueTuple.xml",
-        "lib/net47/System.ValueTuple.dll",
-        "lib/net47/System.ValueTuple.xml",
-        "lib/netcoreapp2.0/_._",
-        "lib/netstandard1.0/System.ValueTuple.dll",
-        "lib/netstandard1.0/System.ValueTuple.xml",
-        "lib/netstandard2.0/_._",
-        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
-        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
-        "lib/uap10.0.16299/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net461/System.ValueTuple.dll",
-        "ref/net47/System.ValueTuple.dll",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard2.0/_._",
-        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
-        "ref/uap10.0.16299/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.valuetuple.4.5.0.nupkg.sha512",
-        "system.valuetuple.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
     "System.Windows.Extensions/4.7.0": {
       "sha512": "CeWTdRNfRaSh0pm2gDTJFwVaXfTq6Xwv/sA887iwPTneW7oMtMlpvDIO+U60+3GWTB7Aom6oQwv5VZVUhQRdPQ==",
       "type": "package",
@@ -6281,7 +6137,6 @@
     "net6.0-windows7.0": [
       "GMap.NET.Core >= 2.1.7",
       "GMap.NET.WinForms >= 2.1.7",
-      "GMap.NET.WinForms.Utils >= 2.1.7",
       "Geocoding.Core >= 4.0.1",
       "Geocoding.Google >= 4.0.1",
       "Newtonsoft.Json >= 13.0.1",
@@ -6340,10 +6195,6 @@
             "target": "Package",
             "version": "[2.1.7, )"
           },
-          "GMap.NET.WinForms.Utils": {
-            "target": "Package",
-            "version": "[2.1.7, )"
-          },
           "Geocoding.Core": {
             "target": "Package",
             "version": "[4.0.1, )"
@@ -6383,37 +6234,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'GMap.NET.WinForms.Utils 2.1.7' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "GMap.NET.WinForms.Utils",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'LINQPad 5.40.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "LINQPad",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'Polylines 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "Polylines",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    }
-  ]
+  }
 }

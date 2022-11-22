@@ -24,7 +24,7 @@ namespace CollegeBicycle
         public static NpgsqlCommand cmd;
         private string sql = null;
         public DataGridViewRow r;
-        private object ids;
+        public object ids;
 
         public Users()
         {
@@ -83,7 +83,7 @@ namespace CollegeBicycle
         {
             if (MessageBox.Show("Apakah benar ingin menghapus data peminjam " + r.Cells["nama_peminjam"].Value.ToString() + " dengan kode sepeda " + r.Cells["kode_sepeda"].Value.ToString() + "?", "Konfirmasi hapus data", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
             {
-                var ids = dgvPeminjam.Rows[e.RowIndex].Cells[0].Value;
+                var ids = dgvPeminjam.Rows[e.RowIndex].Cells[1].Value;
                 listPeminjam.Delete((int)ids);
                 MessageBox.Show("Hapus data berhasil!");
 

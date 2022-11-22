@@ -31,6 +31,24 @@ namespace CollegeBicycle
         private void Employee_Load(object sender, EventArgs e)
         {
             conn = new NpgsqlConnection(connstring);
+            //conn.Open();
+            //try
+            //{
+            //    dgvEmployee.DataSource = null;
+            //    sql = "select * from st_select()";
+            //    cmd = new NpgsqlCommand(sql, conn);
+            //    dt = new DataTable();
+            //    NpgsqlDataReader rd = cmd.ExecuteReader();
+            //    dt.Load(rd);
+            //    dgvEmployee.DataSource = dt;
+
+            //    conn.Close();
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("Error:" + ex.Message, "Gagal memuat data!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
         }
 
         private void btnTambah_Click(object sender, EventArgs e)

@@ -10,7 +10,6 @@
         "dependencies": {
           "GMap.NET.Core": "2.1.7",
           "GMap.NET.WinForms": "2.1.7",
-          "GMap.NET.WinForms.Utils": "2.1.7",
           "Geocoding.Core": "4.0.1",
           "Geocoding.Google": "4.0.1",
           "Newtonsoft.Json": "13.0.1",
@@ -87,33 +86,6 @@
           "lib/net6.0-windows7.0/GMap.NET.WindowsForms.dll": {
             "assemblyVersion": "2.1.7.0",
             "fileVersion": "2.1.7.0"
-          }
-        }
-      },
-      "GMap.NET.WinForms.Utils/2.1.7": {
-        "dependencies": {
-          "GMap.NET.Core": "2.1.7",
-          "GMap.NET.WinForms": "2.1.7",
-          "LINQPad": "5.40.0",
-          "Polylines": "1.0.0",
-          "System.ValueTuple": "4.5.0"
-        },
-        "runtime": {
-          "lib/net461/GMap.NET.WindowsForms.Utils.dll": {
-            "assemblyVersion": "2.1.7.0",
-            "fileVersion": "2.1.7.0"
-          }
-        }
-      },
-      "LINQPad/5.40.0": {
-        "runtime": {
-          "lib/net46/LINQPad.exe": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "5.40.0.0"
-          },
-          "lib/net46/lprun.exe": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -211,14 +183,6 @@
           "lib/net6.0/Npgsql.dll": {
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.0.0"
-          }
-        }
-      },
-      "Polylines/1.0.0": {
-        "runtime": {
-          "lib/Polylines.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -938,7 +902,6 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.ValueTuple/4.5.0": {},
       "System.Windows.Extensions/4.7.0": {
         "dependencies": {
           "System.Drawing.Common": "4.7.0"
@@ -1035,20 +998,6 @@
       "path": "gmap.net.winforms/2.1.7",
       "hashPath": "gmap.net.winforms.2.1.7.nupkg.sha512"
     },
-    "GMap.NET.WinForms.Utils/2.1.7": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-aM1gMnOMzhccVZW0mtl/V99rRfSiJbUoc47YTJrOFGMtSnM6JhphcJRjMXluE6Jgqr+BXZEPPrBNd1yGegUpag==",
-      "path": "gmap.net.winforms.utils/2.1.7",
-      "hashPath": "gmap.net.winforms.utils.2.1.7.nupkg.sha512"
-    },
-    "LINQPad/5.40.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-NP/h6aSYNytwkFmMGYRRlNTBnBSmMFLE05LPreq2OLxCJNxhN8q5RhUbAI87LUzwXFVnjPBZvTeOBhtqiBEgkQ==",
-      "path": "linqpad/5.40.0",
-      "hashPath": "linqpad.5.40.0.nupkg.sha512"
-    },
     "Microsoft.CSharp/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -1118,13 +1067,6 @@
       "sha512": "sha512-tOBFksJZ2MiEz8xtDUgS5IG19jVO3nSP15QDYWiiGpXHe0PsLoQBts2Sg3hHKrrLTuw+AjsJz9iKvvGNHyKDIg==",
       "path": "npgsql/7.0.0",
       "hashPath": "npgsql.7.0.0.nupkg.sha512"
-    },
-    "Polylines/1.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-9WAUaLSVSWf0B+eLx965m3iw6Lbqx5kOlsfOk/lvWHHigG7JGwBWukXDVMlfpCXmho6Kh/EzGQlITXmP9LsE4Q==",
-      "path": "polylines/1.0.0",
-      "hashPath": "polylines.1.0.0.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",
@@ -1720,13 +1662,6 @@
       "sha512": "sha512-Z6YfyYTCg7lOZjJzBjONJTFKGN9/NIYKSxhU5GRd+DTwHSZyvWp1xuI5aR+dLg+ayyC5Xv57KiY4oJ0tMO89fQ==",
       "path": "system.threading.timer/4.3.0",
       "hashPath": "system.threading.timer.4.3.0.nupkg.sha512"
-    },
-    "System.ValueTuple/4.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
-      "path": "system.valuetuple/4.5.0",
-      "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
     },
     "System.Windows.Extensions/4.7.0": {
       "type": "package",

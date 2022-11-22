@@ -101,9 +101,8 @@
             this.lblKetersediaan.Font = new System.Drawing.Font("Gill Sans MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblKetersediaan.Location = new System.Drawing.Point(10, 9);
             this.lblKetersediaan.Name = "lblKetersediaan";
-            this.lblKetersediaan.Size = new System.Drawing.Size(145, 29);
+            this.lblKetersediaan.Size = new System.Drawing.Size(0, 29);
             this.lblKetersediaan.TabIndex = 0;
-            this.lblKetersediaan.Text = "Tersedia : Tidak";
             // 
             // btnPinjam
             // 

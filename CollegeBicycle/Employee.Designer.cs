@@ -47,7 +47,7 @@
             // 
             // dgvEmployee
             // 
-            this.dgvEmployee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvEmployee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEmployee.Location = new System.Drawing.Point(94, 88);
             this.dgvEmployee.Name = "dgvEmployee";
@@ -58,6 +58,7 @@
             // 
             // btnTambah
             // 
+            this.btnTambah.Enabled = false;
             this.btnTambah.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnTambah.Location = new System.Drawing.Point(634, 401);
             this.btnTambah.Name = "btnTambah";
@@ -65,6 +66,7 @@
             this.btnTambah.TabIndex = 7;
             this.btnTambah.Text = "Tambah Pengelola";
             this.btnTambah.UseVisualStyleBackColor = true;
+            this.btnTambah.Visible = false;
             this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
             // 
             // btn_Load

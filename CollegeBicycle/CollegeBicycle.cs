@@ -54,12 +54,12 @@ namespace CollegeBicycle
 
         private void pictureProfile_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new ProfilPengelola(), sender);
+            //OpenChildForm(new ProfilPengelola(), sender);
         }
 
         private void labelProfile_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new ProfilPengelola(), sender);
+            //OpenChildForm(new ProfilPengelola(), sender);
         }
 
         private void btnUsers_Click(object sender, EventArgs e)
@@ -75,6 +75,11 @@ namespace CollegeBicycle
         private void panelTop_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnMap_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Maps(), sender);
         }
     }
 }

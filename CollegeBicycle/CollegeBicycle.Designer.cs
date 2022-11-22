@@ -35,6 +35,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnHomepage = new System.Windows.Forms.Button();
             this.panelSide = new System.Windows.Forms.Panel();
+            this.btnMap = new System.Windows.Forms.Button();
             this.pictureProfile = new System.Windows.Forms.PictureBox();
             this.lblTitleApp = new System.Windows.Forms.Label();
             this.panelTop = new System.Windows.Forms.Panel();
@@ -120,6 +121,7 @@
             // panelSide
             // 
             this.panelSide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(149)))), ((int)(((byte)(178)))));
+            this.panelSide.Controls.Add(this.btnMap);
             this.panelSide.Controls.Add(this.btnEmployee);
             this.panelSide.Controls.Add(this.btnUsers);
             this.panelSide.Controls.Add(this.btnBicycle);
@@ -130,6 +132,21 @@
             this.panelSide.Name = "panelSide";
             this.panelSide.Size = new System.Drawing.Size(70, 564);
             this.panelSide.TabIndex = 3;
+            // 
+            // btnMap
+            // 
+            this.btnMap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(149)))), ((int)(((byte)(178)))));
+            this.btnMap.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnMap.FlatAppearance.BorderSize = 0;
+            this.btnMap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMap.Image = ((System.Drawing.Image)(resources.GetObject("btnMap.Image")));
+            this.btnMap.Location = new System.Drawing.Point(6, 367);
+            this.btnMap.Margin = new System.Windows.Forms.Padding(4);
+            this.btnMap.Name = "btnMap";
+            this.btnMap.Size = new System.Drawing.Size(57, 68);
+            this.btnMap.TabIndex = 10;
+            this.btnMap.UseVisualStyleBackColor = false;
+            this.btnMap.Click += new System.EventHandler(this.btnMap_Click);
             // 
             // pictureProfile
             // 
@@ -223,5 +240,6 @@
         private Panel panelTop;
         private Panel panelDesktop;
         public Label labelProfile;
+        private Button btnMap;
     }
 }

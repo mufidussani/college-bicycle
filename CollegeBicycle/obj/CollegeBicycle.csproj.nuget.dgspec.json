@@ -52,10 +52,6 @@
               "target": "Package",
               "version": "[2.1.7, )"
             },
-            "GMap.NET.WinForms.Utils": {
-              "target": "Package",
-              "version": "[2.1.7, )"
-            },
             "Geocoding.Core": {
               "target": "Package",
               "version": "[4.0.1, )"

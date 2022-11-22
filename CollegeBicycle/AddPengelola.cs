@@ -40,13 +40,11 @@ namespace CollegeBicycle
             cbStation.DisplayMember = "nama_station";
             cbStation.ValueMember = "id_station";
             cbStation.DataSource = ds.Tables["Station"];
-            conn.Close();
         }
 
         private void btnSimpan_Click(object sender, EventArgs e)
         {
             
-
         }
 
         private void cbStation_SelectedIndexChanged(object sender, EventArgs e)

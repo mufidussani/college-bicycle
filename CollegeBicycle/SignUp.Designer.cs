@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUp));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tbConfirm = new System.Windows.Forms.TextBox();
             this.btnSignUp = new System.Windows.Forms.Button();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
@@ -44,6 +46,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(149)))), ((int)(((byte)(178)))));
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.tbConfirm);
             this.panel1.Controls.Add(this.btnSignUp);
             this.panel1.Controls.Add(this.lblPassword);
             this.panel1.Controls.Add(this.lblUsername);
@@ -55,6 +59,25 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(294, 415);
             this.panel1.TabIndex = 5;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(27, 233);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(168, 28);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Confirm Password";
+            // 
+            // tbConfirm
+            // 
+            this.tbConfirm.Location = new System.Drawing.Point(27, 265);
+            this.tbConfirm.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tbConfirm.Name = "tbConfirm";
+            this.tbConfirm.Size = new System.Drawing.Size(241, 27);
+            this.tbConfirm.TabIndex = 6;
+            this.tbConfirm.UseSystemPasswordChar = true;
             // 
             // btnSignUp
             // 
@@ -73,7 +96,7 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblPassword.Location = new System.Drawing.Point(27, 215);
+            this.lblPassword.Location = new System.Drawing.Point(27, 165);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(93, 28);
             this.lblPassword.TabIndex = 5;
@@ -83,7 +106,7 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblUsername.Location = new System.Drawing.Point(27, 109);
+            this.lblUsername.Location = new System.Drawing.Point(27, 91);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(99, 28);
             this.lblUsername.TabIndex = 4;
@@ -91,7 +114,7 @@
             // 
             // tbCreatePassword
             // 
-            this.tbCreatePassword.Location = new System.Drawing.Point(27, 247);
+            this.tbCreatePassword.Location = new System.Drawing.Point(27, 197);
             this.tbCreatePassword.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbCreatePassword.Name = "tbCreatePassword";
             this.tbCreatePassword.Size = new System.Drawing.Size(241, 27);
@@ -101,7 +124,7 @@
             // tbCreateUsername
             // 
             this.tbCreateUsername.AcceptsReturn = true;
-            this.tbCreateUsername.Location = new System.Drawing.Point(27, 141);
+            this.tbCreateUsername.Location = new System.Drawing.Point(27, 123);
             this.tbCreateUsername.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbCreateUsername.Name = "tbCreateUsername";
             this.tbCreateUsername.Size = new System.Drawing.Size(241, 27);
@@ -137,6 +160,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "SignUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SignUp";
             this.Load += new System.EventHandler(this.SignUp_Load);
             this.panel1.ResumeLayout(false);
@@ -156,5 +180,7 @@
         private TextBox tbCreateUsername;
         private Label label1;
         private PictureBox pictureBox1;
+        private Label label2;
+        private TextBox tbConfirm;
     }
 }

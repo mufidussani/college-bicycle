@@ -9,13 +9,9 @@ D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-w
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows7.0\Geocoding.Google.dll
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows7.0\GMap.NET.Core.dll
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows7.0\GMap.NET.WindowsForms.dll
-D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows7.0\GMap.NET.WindowsForms.Utils.dll
-D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows7.0\LINQPad.exe
-D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows7.0\lprun.exe
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows7.0\Microsoft.Extensions.Logging.Abstractions.dll
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows7.0\Newtonsoft.Json.dll
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows7.0\Npgsql.dll
-D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows7.0\Polylines.dll
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows7.0\System.Data.SQLite.dll
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows7.0\System.Data.SqlClient.dll
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\bin\Debug\net6.0-windows7.0\System.Data.SQLite.EF6.dll
@@ -52,3 +48,4 @@ D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-w
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows7.0\CollegeBicycle.pdb
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows7.0\CollegeBicycle.genruntimeconfig.cache
 D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows7.0\ref\CollegeBicycle.dll
+D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\obj\Debug\net6.0-windows7.0\CollegeBicycle.Maps.resources

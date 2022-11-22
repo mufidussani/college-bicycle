@@ -118,6 +118,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Name = "AddPengelola";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddPengelola";
             this.Load += new System.EventHandler(this.AddPengelola_Load);
             this.ResumeLayout(false);

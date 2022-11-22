@@ -33,7 +33,7 @@ namespace CollegeBicycle
         public Bicycle()
         {
             InitializeComponent();
-            tbLokasi.Text = "Hello, Select Me";
+            tbLokasi.Text = "";
             tbLokasi.ReadOnly = true;
             tbLokasi.BorderStyle = 0;
             tbLokasi.BackColor = this.BackColor;
@@ -84,6 +84,8 @@ namespace CollegeBicycle
 
         private void btnPinjam_Click(object sender, EventArgs e)
         {
+            addpenggunasepeda.btnUpdate.Visible = false;
+            addpenggunasepeda.btnUpdate.Enabled = false;
             addpenggunasepeda.ShowDialog();
         }
 
@@ -99,6 +101,7 @@ namespace CollegeBicycle
                 addsepeda.tbLokasiSepeda.Text = r.Cells["lokasi_sepeda"].Value.ToString();
                 addsepeda.comboBoxKetersediaan.Text = r.Cells["ketersediaan_sepeda"].Value.ToString();
                 tbLokasi.Text = "Lokasi: " + r.Cells["lokasi_sepeda"].Value.ToString();
+                lblKetersediaan.Text = "Tersedia: " + r.Cells["ketersediaan_sepeda"].Value.ToString();
             }
         }
         public void UpdateDgv()

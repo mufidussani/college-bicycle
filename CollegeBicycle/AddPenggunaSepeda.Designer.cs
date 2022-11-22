@@ -233,8 +233,6 @@
         }
 
         #endregion
-        private Button btnUpdate;
-        private Button btnSimpan;
         private Label label4;
         private Label label3;
         private Label label5;
@@ -249,5 +247,7 @@
         public DateTimePicker dtpTanggalPinjam;
         public TextBox tbNoHp;
         public DateTimePicker dtpTanggalKembali;
+        public Button btnSimpan;
+        public Button btnUpdate;
     }
 }
