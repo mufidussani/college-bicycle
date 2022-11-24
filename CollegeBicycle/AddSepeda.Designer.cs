@@ -74,7 +74,7 @@
             // btnSimpan
             // 
             this.btnSimpan.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSimpan.Location = new System.Drawing.Point(408, 363);
+            this.btnSimpan.Location = new System.Drawing.Point(608, 363);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(173, 29);
             this.btnSimpan.TabIndex = 34;
@@ -159,10 +159,13 @@
             this.btnUpdate.TabIndex = 44;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Visible = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // comboBoxKetersediaan
             // 
+            this.comboBoxKetersediaan.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.comboBoxKetersediaan.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBoxKetersediaan.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBoxKetersediaan.FormattingEnabled = true;
             this.comboBoxKetersediaan.Items.AddRange(new object[] {
@@ -172,6 +175,7 @@
             this.comboBoxKetersediaan.Name = "comboBoxKetersediaan";
             this.comboBoxKetersediaan.Size = new System.Drawing.Size(290, 33);
             this.comboBoxKetersediaan.TabIndex = 45;
+            this.comboBoxKetersediaan.Text = "Tersedia";
             // 
             // AddSepeda
             // 
@@ -204,16 +208,16 @@
         #endregion
         private Label label2;
         private Label label1;
-        private Button btnSimpan;
         private Label label3;
         private Label label4;
         private Button btnKoordinat;
         private Label label5;
-        private Button btnUpdate;
         public TextBox tbKodeSepeda;
         public ComboBox comboBoxStation;
         public TextBox tbLokasiSepeda;
         public Label lblLatLong;
         public ComboBox comboBoxKetersediaan;
+        public Button btnUpdate;
+        public Button btnSimpan;
     }
 }

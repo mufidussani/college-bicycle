@@ -38,19 +38,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(250, 5);
+            this.label1.Font = new System.Drawing.Font("Gill Sans MT", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(294, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(391, 38);
+            this.label1.Size = new System.Drawing.Size(352, 39);
             this.label1.TabIndex = 4;
             this.label1.Text = "Informasi Peminjaman Sepeda";
             // 
             // comboBoxStation
             // 
+            this.comboBoxStation.Font = new System.Drawing.Font("Gill Sans MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.comboBoxStation.FormattingEnabled = true;
-            this.comboBoxStation.Location = new System.Drawing.Point(328, 58);
+            this.comboBoxStation.Location = new System.Drawing.Point(357, 51);
             this.comboBoxStation.Name = "comboBoxStation";
-            this.comboBoxStation.Size = new System.Drawing.Size(218, 28);
+            this.comboBoxStation.Size = new System.Drawing.Size(218, 37);
             this.comboBoxStation.TabIndex = 5;
             this.comboBoxStation.Text = "Pilih Station...";
             this.comboBoxStation.SelectedIndexChanged += new System.EventHandler(this.comboBoxStation_SelectedIndexChanged);
@@ -70,6 +71,7 @@
             // 
             // btnUpdateForm
             // 
+            this.btnUpdateForm.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnUpdateForm.Location = new System.Drawing.Point(716, 401);
             this.btnUpdateForm.Name = "btnUpdateForm";
             this.btnUpdateForm.Size = new System.Drawing.Size(149, 29);

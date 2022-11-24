@@ -18,7 +18,7 @@ namespace CollegeBicycle
             InitializeComponent();
         }
         private NpgsqlConnection conn;
-        string connstring = "Host=database-1.c3sblevz37wv.ap-northeast-1.rds.amazonaws.com;Port=5432;Username=postgres;Password=collegebicycle;Database=collegebicycle";
+        string connstring = "Host=database-1.c2ftykohxpnw.ap-northeast-1.rds.amazonaws.com;Port=5432;Username=postgres;Password=collegebicycle;Database=collegebicycle";
         public DataTable dt;
         public static NpgsqlCommand cmd;
         private string sql = null;
@@ -62,7 +62,7 @@ namespace CollegeBicycle
             }
             else
             {
-                MessageBox.Show("Sign Up Gagal!", "Silakan Cek Username atau Password Kembali", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                MessageBox.Show("Silakan Cek Username atau Password Kembali", "Sign Up Gagal!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 return;
             }
         }

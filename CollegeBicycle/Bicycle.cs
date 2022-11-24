@@ -25,7 +25,7 @@ namespace CollegeBicycle
         readonly private SepedaRepository listSepeda = new SepedaRepository();
         readonly private StationRepository listStation = new StationRepository();
         private NpgsqlConnection conn;
-        string connstring = "Host=database-1.c3sblevz37wv.ap-northeast-1.rds.amazonaws.com;Port=5432;Username=postgres;Password=collegebicycle;Database=collegebicycle";
+        string connstring = "Host=database-1.c2ftykohxpnw.ap-northeast-1.rds.amazonaws.com;Port=5432;Username=postgres;Password=collegebicycle;Database=collegebicycle";
         public DataTable dt;
         public static NpgsqlCommand cmd;
         private string sql = null;
@@ -33,6 +33,7 @@ namespace CollegeBicycle
         public Bicycle()
         {
             InitializeComponent();
+            UpdateDgv();
             tbLokasi.Text = "";
             tbLokasi.ReadOnly = true;
             tbLokasi.BorderStyle = 0;
@@ -94,11 +95,16 @@ namespace CollegeBicycle
             if (e.RowIndex >= 0)
             {
                 r = dgvSepeda.Rows[e.RowIndex];
+                addsepeda.btnUpdate.Visible = true;
+                addsepeda.btnSimpan.Visible = false;
+                addsepeda.btnSimpan.Enabled = false;
+                addsepeda.btnUpdate.Enabled = true;
                 addpenggunasepeda.tbStation.Text = r.Cells["nama_station"].Value.ToString();
                 addpenggunasepeda.tbKodeSepeda.Text = r.Cells["kode_sepeda"].Value.ToString();
                 addsepeda.comboBoxStation.Text = r.Cells["nama_station"].Value.ToString();
+                addsepeda.idsepeda = r.Cells[0].Value.ToString();
                 addsepeda.tbKodeSepeda.Text = r.Cells["kode_sepeda"].Value.ToString();
-                addsepeda.tbLokasiSepeda.Text = r.Cells["lokasi_sepeda"].Value.ToString();
+                addsepeda.lblLatLong.Text = r.Cells["lokasi_sepeda"].Value.ToString();
                 addsepeda.comboBoxKetersediaan.Text = r.Cells["ketersediaan_sepeda"].Value.ToString();
                 tbLokasi.Text = "Lokasi: " + r.Cells["lokasi_sepeda"].Value.ToString();
                 lblKetersediaan.Text = "Tersedia: " + r.Cells["ketersediaan_sepeda"].Value.ToString();
@@ -106,7 +112,7 @@ namespace CollegeBicycle
         }
         public void UpdateDgv()
         {
-            List<Sepeda> ListSepeda = listSepeda.GetAll();
+            List<Sepeda> ListSepeda = listSepeda.GetSpesificStation(comboBoxStation.SelectedIndex);
             dgvSepeda.DataSource = ListSepeda;
         }
 

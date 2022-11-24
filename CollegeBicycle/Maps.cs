@@ -16,13 +16,12 @@ namespace CollegeBicycle
     {
         public Maps()
         {
-            
+            map.ShowCenter = false;
             InitializeComponent();
         }
 
         private void Maps_Load(object sender, EventArgs e)
         {
-            map.ShowCenter = false;
             map.MapProvider = GMapProviders.GoogleMap;
             map.Zoom = 18;
             map.MinZoom = 0;

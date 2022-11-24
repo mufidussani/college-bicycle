@@ -60,7 +60,7 @@
             // btnSimpan
             // 
             this.btnSimpan.Font = new System.Drawing.Font("Gill Sans MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSimpan.Location = new System.Drawing.Point(394, 382);
+            this.btnSimpan.Location = new System.Drawing.Point(591, 382);
             this.btnSimpan.Name = "btnSimpan";
             this.btnSimpan.Size = new System.Drawing.Size(173, 29);
             this.btnSimpan.TabIndex = 32;

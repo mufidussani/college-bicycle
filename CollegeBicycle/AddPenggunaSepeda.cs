@@ -49,10 +49,10 @@ namespace CollegeBicycle
         {
             try
             { 
-            Users user = new Users();
-            newPeminjam.Update((int)id, tbStation.Text, tbKodeSepeda.Text, tbNama.Text, tbNim.Text, tbNoHp.Text, dtpTanggalPinjam.Value, dtpTanggalKembali.Value);
-            MessageBox.Show("Pengguna Sepeda berhasil diubah");
-            user.UpdateDgv();
+                Users user = new Users();
+                newPeminjam.Update((int)id, tbStation.Text, tbKodeSepeda.Text, tbNama.Text, tbNim.Text, tbNoHp.Text, dtpTanggalPinjam.Value, dtpTanggalKembali.Value);
+                MessageBox.Show("Pengguna Sepeda berhasil diubah");
+                user.UpdateDgv();
             }
             catch (Exception ex)
             {
