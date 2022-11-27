@@ -4,40 +4,40 @@
     <_LastSelectedProfileId>D:\PROGRAMMING\COLLEGE-BICYCLE\college-bicycle\CollegeBicycle\Properties\PublishProfiles\ClickOnceProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Update="AddPengelola.cs">
+    <Compile Update="Forms\AddPengelola.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AddPenggunaSepeda.cs">
+    <Compile Update="Forms\AddPenggunaSepeda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="AddSepeda.cs">
+    <Compile Update="Forms\AddSepeda.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Bicycle.cs">
+    <Compile Update="Forms\Bicycle.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="CollegeBicycle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Employee.cs">
+    <Compile Update="Forms\Employee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Homepage.cs">
+    <Compile Update="Forms\Homepage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Login.cs">
+    <Compile Update="Forms\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Maps.cs">
+    <Compile Update="Forms\Maps.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="ProfilPengelola.cs">
+    <Compile Update="Forms\ProfilPengelola.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="SignUp.cs">
+    <Compile Update="Forms\SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Users.cs">
+    <Compile Update="Forms\Users.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

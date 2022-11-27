@@ -24,7 +24,7 @@ namespace CollegeBicycle
             this.f1 = employee;
         }
         private NpgsqlConnection conn;
-        string connstring = "Host=database-1.c2ftykohxpnw.ap-northeast-1.rds.amazonaws.com;Port=5432;Username=postgres;Password=collegebicycle;Database=collegebicycle";
+        string connstring = "Host=database-2.c2ftykohxpnw.ap-northeast-1.rds.amazonaws.com;Port=5432;Username=postgres;Password=collegebicycle;Database=college-bicycle";
         public DataTable dt;
         public static NpgsqlCommand cmd;
         private string sql = null;
